@@ -1,0 +1,34 @@
+<div class="home-page">
+	<!-- Carousel -->
+	<div class="carousel sample-faces">
+		<div class="carousel-wrapper" ng-mouse-wheel-up="srollActiveFaceUp()" ng-mouse-wheel-down="srollActiveFaceDown()" ng-style="{'left':carouselWrapperPosition + 'px'}">
+			<div class="carousel-strip text-center" ng-style="{'left': carouselPosition + 'px', 'width':carouselWidth}" ng-swipe-left="srollActiveFaceDown()" ng-swipe-right="srollActiveFaceUp()">
+				<div class="carousel-item face" data-ng-class="{'active': $index === activeImage}" data-ng-repeat="face in sampleFaces" ng-click="setFaceActive($index)">
+					<img ng-src="{{::face.imgURL}}" alt=""/>
+					<div class="item-description career-result">
+						<div class="text-clip">
+							<strong title="{{::face.career}}">{{::face.career}} </strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ Carousel -->
+	<!-- Photos from Facebook -->
+	<div class="text-center error-wrapper" hidden>
+		<div class="alert alert-danger" role="alert">
+			<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+			<span class="sr-only">Error:</span>
+			There is an error with getting your photo from Facebook. Please try again!
+		</div>
+	</div>
+	<div class="text-center use-facebook-photo">
+		<a class="btn-translucent" href="#">
+			<img class="facebook-icon" src="assets/img/icon_facebook.png" alt=""/>
+			<span>{{'UseFBProfile' | translate}}</span>
+		</a>
+	</div>
+	<p class="ps text-center">{{'PS' | translate}}</p>
+	<!--/ Photos from Facebook -->
+</div>

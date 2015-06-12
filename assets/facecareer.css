@@ -1,0 +1,384 @@
+body {
+  background: #1e8cbe;
+  overflow-x: hidden;
+}
+p,
+div,
+span,
+h1,
+h2,
+h3,
+h1 small,
+a {
+  color: #e8f0f5;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 300;
+}
+a {
+  color: #003b6c;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+a:hover {
+  color: #efb07f;
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+.face-detection-ring {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  border: 2px dashed #ff5051;
+  position: absolute;
+}
+.text-clip {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.languages {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  background: #4ba3cb;
+  padding: 2px 10px;
+  -webkit-border-radius: 0 0 0 5px;
+  -moz-border-radius: 0 0 0 5px;
+  border-radius: 0 0 0 5px;
+}
+.languages a {
+  cursor: pointer;
+}
+.languages .active {
+  cursor: default;
+  color: #e8f0f5;
+  text-decoration: none;
+}
+.page-title-wrapper {
+  display: inline-block;
+}
+div.page-title-wrapper {
+  margin-top: 50px;
+}
+div.page-title-wrapper .face-career-logo {
+  width: 94px;
+  height: 94px;
+}
+h1.title {
+  font-size: 60px;
+  font-weight: 300;
+  text-align: left;
+  margin: 0;
+  margin-left: 10px;
+}
+h1.title .logo-faceworks {
+  margin-bottom: 10px;
+  margin-left: -3px;
+  width: 308px;
+  height: 50px;
+}
+h1.title small {
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+}
+@media (max-width: 480px) {
+  div.page-title-wrapper {
+    margin-top: 40px;
+  }
+  div.page-title-wrapper h1 {
+    font-size: 37px;
+    margin-left: 5px;
+  }
+  div.page-title-wrapper h1 small {
+    font-size: 12px;
+  }
+  div.page-title-wrapper .face-career-logo {
+    width: 60px;
+    height: 60px;
+  }
+  h1.title .logo-faceworks {
+    width: 188px;
+    height: auto;
+  }
+}
+.facebook-share {
+  margin-top: 50px;
+  height: 20px;
+}
+@media (max-width: 767px) {
+  .facebook-share {
+    margin-top: 25px;
+  }
+}
+.carousel {
+  height: 270px;
+}
+.carousel .carousel-wrapper {
+  position: absolute;
+}
+.carousel .carousel-strip {
+  position: relative;
+  -webkit-transition: left 0.5s;
+  -o-transition: left 0.5s;
+  transition: left 0.5s;
+}
+.carousel .carousel-item {
+  display: inline-block;
+}
+.sample-faces {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sample-faces .career-result {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.sample-faces .carousel-strip {
+  height: 262px;
+}
+.sample-faces .face {
+  cursor: pointer;
+  -webkit-transition: background 0.3s, box-shadow 0.3s, padding-left 0.3s, padding-right 0.3s;
+  -o-transition: background 0.3s, box-shadow 0.3s, padding-left 0.3s, padding-right 0.3s;
+  transition: background 0.3s, box-shadow 0.3s, padding-left 0.3s, padding-right 0.3s;
+  background: transparent;
+}
+.sample-faces .face.active {
+  background: #e8f0f5;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.sample-faces .face.active img {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.sample-faces .face.active .career-result {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #1e8cbe;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+.sample-faces .face.active .career-result * {
+  color: #1e8cbe;
+}
+.sample-faces .face img {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  width: 200px;
+  height: 200px;
+  -webkit-user-drag: none;
+}
+.home-page .facebook-icon {
+  width: 31px;
+  height: 31px;
+}
+.error-wrapper .alert {
+  background: #e7e1eb;
+  font-weight: 400;
+  color: #a04747;
+  display: inline-block;
+}
+.error-wrapper .alert span.glyphicon {
+  color: #a04747;
+}
+.result {
+  margin: 50px 0;
+}
+.result .close-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url(../assets/img/icon_close.png) center center no-repeat;
+  background-size: 50%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.result .close-icon:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.result .chosen-face {
+  padding: 0 70px;
+}
+.result .chosen-face-wrapper {
+  background: #fff;
+  border-radius: 0 5px 5px 0;
+  position: relative;
+}
+.result .chosen-face-wrapper p {
+  color: #333333;
+}
+.result .chosen-face-wrapper .result-content {
+  width: 770px;
+  padding: 30px 30px 10px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.result .face {
+  cursor: pointer;
+  -webkit-transition: background 0.3s, box-shadow 0.3s, padding-left 0.3s, padding-right 0.3s;
+  -o-transition: background 0.3s, box-shadow 0.3s, padding-left 0.3s, padding-right 0.3s;
+  transition: background 0.3s, box-shadow 0.3s, padding-left 0.3s, padding-right 0.3s;
+  background: transparent;
+}
+.result .face.active {
+  background: #e8f0f5;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.result .face.active img {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.result .face.active .career-result {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #1e8cbe;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+.result .face.active .career-result * {
+  color: #1e8cbe;
+}
+.result .face img {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  width: 200px;
+  height: 200px;
+}
+.result .email-me-jobs p.lead {
+  margin: 50px 0 20px;
+}
+.result .email-me-jobs .email-icon {
+  width: 25px;
+  height: 20px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .result .chosen-face-wrapper .result-content {
+    width: 580px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .result .chosen-face {
+    padding: 0;
+  }
+  .result .chosen-face-wrapper .result-content {
+    width: 500px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .result {
+    margin-top: 25px;
+  }
+  .result .chosen-face {
+    padding: 0;
+  }
+  .result .chosen-face-wrapper {
+    border-radius: 5px;
+  }
+  .result .chosen-face-wrapper .result-content {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 15px;
+  }
+  .result .face.active {
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 0;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .result .face.active img {
+    border-radius: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .result {
+    margin-bottom: 20px;
+  }
+  .result .email-me-jobs p.lead {
+    margin-top: 30px;
+  }
+}
+.btn-translucent {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #177ab1;
+  border: 1px solid #44aed3;
+  font-size: 18px;
+  color: #e8f0f5;
+  font-weight: 300;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-translucent * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn-translucent:hover,
+.btn-translucent:focus {
+  background: #00669b;
+  text-decoration: none;
+}
+.btn-translucent:active {
+  background: #0081b2;
+}
+.use-facebook-photo {
+  margin-bottom: 20px;
+}
+p.ps {
+  margin-bottom: 90px;
+}
+@media (max-width: 767px) {
+  p.ps {
+    margin-bottom: 30px;
+  }
+}
+.vietnamworks-logo {
+  width: 176px;
+  height: 54px;
+}
+.terms {
+  margin-bottom: 30px;
+}
+.terms span {
+  color: #003b6c;
+}
+.copyright {
+  margin-bottom: 40px;
+}

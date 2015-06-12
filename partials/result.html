@@ -1,0 +1,38 @@
+<div class="result">
+	<!-- Chosen Face -->
+	<div class="chosen-face">
+		<div class="chosen-face-wrapper clearfix">
+			<div class="active face pull-left relative">
+				<img ng-src="{{::faceResult.imgURL}}" alt=""/>
+				<div class="career-result text-center">
+					<div class="text-clip">
+						<strong title="{{::faceResult.career}}">{{::faceResult.career}} </strong>
+					</div>
+				</div>
+				<div class="face-detection-ring" style="top:10px; left: 60px" hidden></div>
+			</div>
+			<div class="result-content pull-left">
+				<span class="close-icon" ng-click="backHome()"></span>
+				<p>{{'Hello' | translate}}</p>
+				<p>{{'MyNameIs' | translate}} <strong>{{::faceResult.name}}</strong>!</p>
+				<p ng-if="activatedLanguage === 'en'">{{::faceResult.description}}</p>
+				<p ng-if="activatedLanguage === 'vi'">{{::faceResult.description_vi}}</p>
+				<p>The
+					<a href="#">#FaceWorks</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--/ Chosen Face -->
+	<!-- Email Me Jobs -->
+	<div class="email-me-jobs">
+		<p class="lead text-center" data-translate="Sorry"></p>
+		<div class="text-center btn-email-me-jobs">
+			<a class="btn-translucent" ng-href="{{'EmailMeUrl' | translate}}" target="_blank">
+				<img class="email-icon" src="assets/img/icon_email.png" alt=""/>
+				<span>{{'EmailMe' | translate}}</span>
+			</a>
+		</div>
+	</div>
+	<!--/ Email Me Jobs -->
+</div>

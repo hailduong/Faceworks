@@ -1,0 +1,194 @@
+[
+  {
+    "id": "11",
+    "name": "Sơn",
+    "imgURL": "./assets/img/face_samples/son.jpg",
+    "career": "Senior PHP Developer",
+    "description": "I am a PHP Developer. I love coding and learning about new technologies, I enjoy working at VietnamWorks because I can do both things.",
+    "description_vi": "Tôi là một lập trình viên PHP. Tôi yêu thích lập trình và học hỏi những công nghệ mới. Tôi thích làm việt ở VietnamWorks vì tôi có thể làm cả hai điều cùng một lúc."
+  },
+  {
+    "id": "2",
+    "name": "Đức",
+    "imgURL": "./assets/img/face_samples/duc.jpg",
+    "career": "ERP Senior Product Owner",
+    "description": "As a product owner my focus is to ease the link from external customer to our internal business. I love to try new thing, to apply new technology in order to create more competitive advantages to VietnamWorks.",
+    "description_vi": "Là người phụ trách phát triển sản phẩm, công việc yêu thích của tôi là tạo đường nối để khách hàng và doanh nghiệp xích lại gần nhau hơn. Tôi luôn sẵn sàng cho những thử thách mới cũng như áp dụng các kỹ thuật tiên tiến vào để tạo ra nhiều lợi thế cạnh tranh hơn cho công ty của mình."
+  },
+  {
+    "id": "3",
+    "name": "Dương",
+    "imgURL": "./assets/img/face_samples/duong.jpg",
+    "career": "Content Evangelist",
+    "description": "My passion is writing and engaging the VietnamWorks community with contents that add value to their careers. My motto is helping people to Move Up!",
+    "description_vi": "Với niềm đam mê viết lách của mình, tôi mong muốn đem lại những nội dung hữu ích và xây dựng một cộng đồng VietnamWorks gắn kết. Công việc của tôi là giúp mọi người thăng tiến trong sự nghiệp!"
+  },
+  {
+    "id": "4",
+    "name": "Eduardo Mora",
+    "imgURL": "./assets/img/face_samples/ed.jpg",
+    "career": "Head of Product",
+    "description": "My focus as Head of Product at VietnamWorks is discovering, innovating, localizing and implementing online recruitment products and services that are valuable, usable and feasible for Vietnam market.!",
+    "description_vi": "Phụ trách về mảng phát triển sản phẩm, tôi luôn tập trung vào việc khám phá, đổi mới, định vị thị trường, tạo ra nhiều chức năng có giá trị và dễ sử dụng cho ngành tuyển dụng trực tuyến tại Việt Nam"
+  },
+  {
+    "id": "5",
+    "name": "Hà",
+    "imgURL": "./assets/img/face_samples/ha.jpg",
+    "career": "Senior Quality Assurance",
+    "description": "My code is behind the scenes, it runs everyday to make sure we deliver usable and bug-free features to our users each release. I am an advocate for automation testing.",
+    "description_vi": "Tôi luôn là người đứng sau đảm bảo mỗi chức năng trong website được vận hành một cách hiệu quả và chất lượng nhất. Tôi phụ trách việc tự động hóa kiểm tra chất lượng sản phẩm."
+  },
+  {
+    "id": "22",
+    "name": "Hổ",
+    "imgURL": "./assets/img/face_samples/ho.jpg",
+    "career": "IT Evangelist",
+    "description": "I'm an IT Evangelist, My mission in Navigos Group is making sure our Network, System always up and running with the best performance.",
+    "description_vi": "Là một người quản trị trong lĩnh vực IT, nhiệm vụ của tôi tại Navigos Group là đảm bảo toàn bộ mạng lưới, hệ thống tại công ty luôn hoạt động tốt và ổn định với hiệu suất cao nhất."
+  },
+  {
+    "id": "6",
+    "name": "Khoa",
+    "imgURL": "./assets/img/face_samples/khoa.jpg",
+    "career": "Senior Java Developer",
+    "description": "As a Java Developer at TechLooper, I'm mainly focusing on back-end. However, I'm also willing to learn and support the team on the front-end side. My strengths include teamwork-ability and product-mindset. My motto is following your passion until success (FOCUS).",
+    "description_vi": "Là một lập trình viên Java cho TechLooper, công việc của tôi chủ yếu là tập trung vào phần back-end cho sản phẩm này. Tuy nhiên, tôi luôn sẵn lòng học hỏi và giúp đỡ đồng nghiệp trong mảng front-end. Điểm mạnh của tôi bao gồm khả năng làm việc nhóm và tư duy sản phẩm. Châm ngôn của tôi là hãy theo đuổi đam mê của bạn cho đến khi thành công (TẬP TRUNG) "
+  },
+  {
+    "id": "7",
+    "name": "Lân",
+    "imgURL": "./assets/img/face_samples/lan.jpg",
+    "career": "Senior Developer and Mentor",
+    "description": "I am a PHP Developer. To me, coding is something I do for fun, I care about usability and enjoy learning and coaching my colleagues on new technologies",
+    "description_vi": "Tôi là một lập trình viên PHP. Đối với tôi, lập trình là mang lại niềm vui. Tôi cũng quan tâm đến tính khả dụng của sản phẩm, việc học hỏi và chia sẽ với đồng nghiệp về những công nghệ mới nhất."
+  },
+  {
+    "id": "8",
+    "name": "Lành",
+    "imgURL": "./assets/img/face_samples/lanh.jpg",
+    "career": "User Experience Leader",
+    "description": "As a User Experience (UX) Leader at VietnamWorks, I wanna bring a good UX & UI to our product to help our users solve their problems and fulfill their needs. My objective is making our users love our product.",
+    "description_vi": "Là một người phụ trách về mảng trải nghiệm người dùng tại VietnamWorks, mong muốn của tôi là đem lại cho người dùng những trải nghiệm tốt nhất khi sử dụng sản phẩm của chúng tôi, cũng như giải quyết các vấn đề và đáp ứng nhu cầu của người dùng. Mục đích của tôi là đem lại niềm vui, niềm hứng khởi và sự yêu mến khi sử dụng sản phẩm."
+  },
+  {
+    "id": "9",
+    "name": "Minh",
+    "imgURL": "./assets/img/face_samples/minh.jpg",
+    "career": "Senior Support Engineer",
+    "description": "I just got married! After nice honeymoon (and few drinks at YoYo) I am back with my network cables, switches, firewalls, servers, updates. I love it! ",
+    "description_vi": "Tôi vừa kết hôn! Sau một tuần trăng mật đẹp (và một vài ly rượu ở YoYo), tôi sẽ quay trở lại với cáp mạng, thiết bị chuyển mạch, tường lửa, máy chủ, và những cập nhật mới. Thật tuyệt vời!"
+  },
+  {
+    "id": "10",
+    "name": "Morio",
+    "imgURL": "./assets/img/face_samples/morio.jpg",
+    "career": "Senior Product Owner",
+    "description": "I am a product owner in engineering team focusing on extending the VietnamWorks' value and create new values through providing the websites such as JapanWorks. I love to find problems and solve them with new ideas or sometimes applying good ideas existing somewhere already.",
+    "description_vi": "Tôi phụ trách về mảng phát triển sản phẩm, tập trung nâng cao giá trị của VietnamWorks cũng như tạo ra những giá trị mới thông qua JapanWorks. Tôi thích việc tìm tòi và giải quyết những khó khăn bằng những ý tưởng mới, hoặc đôi khi bằng những ý tưởng hay mà tôi tìm được ở đâu đó!"
+  },
+  {
+    "id": "11",
+    "name": "Chris Shayan",
+    "imgURL": "./assets/img/face_samples/chris.jpg",
+    "career": "Head of Engineering",
+    "description": "I am Head of Engineering at VietnamWorks since Oct of 2013. I joined with the vision of empowering innovation. I am an innovator, growth hacker, leader, team builder, software architect and loud-mouth on the design and development of web ventures and startups.",
+    "description_vi": "Tôi là Giám Đốc Kĩ Thuật từ tháng 10/2013. Tôi gia nhập với tầm nhìn về việc đẩy mạnh sự sáng tạo. Tôi và một người cải cách, một người tập trung vào sự phát triển, một nhà lãnh đạo, người xây dựng nhóm, và là một kiến trúc sư phần mềm trong lĩnh vực thiết kế và sáng tạo website, đầu tư và khởi nghiệp."
+  },
+  {
+    "id": "12",
+    "name": "Nghĩa",
+    "imgURL": "./assets/img/face_samples/nghia.jpg",
+    "career": "Database Administrator",
+    "description": "I work mainly in Data Integration and Analytics, support BI team on their reports. I am eager to learn new things about Data Science and Machine Learning.",
+    "description_vi": "Công việc của tôi chủ yếu là về vấn đề chuyển đổi và phân tích dữ liệu, hỗ trợ xây dựng dữ liệu cho các báo cáo kinh doanh. Tôi luôn sẵn sàng để học hỏi những điều mới lạ về khoa học dữ liệu và máy tính"
+  },
+  {
+    "id": "13",
+    "name": "Ninh",
+    "imgURL": "./assets/img/face_samples/ninh.jpg",
+    "career": "Senior Data Architect",
+    "description": "Love to work with data, BI and online system with automation as much as possible.",
+    "description_vi": "Tôi thích làm việc với dữ liệu, kinh doanh và hệ thống trực tuyến với khả năng tự động hóa tối đa"
+  },
+  {
+    "id": "14",
+    "name": "Phương",
+    "imgURL": "./assets/img/face_samples/phuong.jpg",
+    "career": "Senior Java Developer",
+    "description": "Coding is fun and I want to do more coding for people. It is exciting to see my stuff is useful for everyone. That is my passion.",
+    "description_vi": "Lập trình là niềm vui và tôi mong muốn được làm việc nhiều hơn nữa. Thật sự thú vị khi thấy những sản phẩm của mình tạo ra hữu ích cho  mọi người. Đây cũng chính là niềm đam mê của tôi."
+  },
+  {
+    "id": "15",
+    "name": "Quang",
+    "imgURL": "./assets/img/face_samples/quang.jpg",
+    "career": "Technical Support Engineer",
+    "description": "I am an IT support guy who help user to fix their computer in daily basis. My passion is working and managing servers, little by little I am getting more involved in development.",
+    "description_vi": "Tôi là một anh chàng IT và công việc hằng ngày của tôi là hỗ trợ người sử dụng trong việc sửa chữa máy tính. Đam mê của tôi là làm việc và quản lý các máy chủ, mỗi ngày tôi tham gia nhiều hơn vào quá trình phát triển của mảng này"
+  },
+  {
+    "id": "16",
+    "name": "Quyên",
+    "imgURL": "./assets/img/face_samples/quyen.jpg",
+    "career": "Senior Product Owner",
+    "description": "As Product Owner at VietnamWorks I want to make a difference in order to achieve our business targets. I am the go to person for CRM, I am delighted to improve and optimize our CRM in order to help sales achieve their targets.",
+    "description_vi": "Là một chuyên gia quản trị sản phẩm tại VietnamWorks, tôi mong muốn tạo ra sự khác biệt nhằm giúp công ty đạt được mục đích kinh doanh. Tôi cũng trực tiếp làm về CRM, và tôi rất vui khi góp phần cải tiến cũng như tối ưu hóa hệ thống CRM để giúp bộ phận bán hàng đạt được nhiều lợi nhuận."
+  },
+  {
+    "id": "17",
+    "name": "Tân",
+    "imgURL": "./assets/img/face_samples/tan.jpg",
+    "career": "Senior Database Administrator",
+    "description": "All of my jobs are protecting VietnamWorks's Database and making sure that VietnamWorks's Sites will be working with the good performance. I will try my best for these 2 objectives.",
+    "description_vi": "Công việc của tôi là bảo vệ dữ liệu của VietnamWorks và đảm bảo website luôn hoạt động với khả năng thực thi tốt nhất. Tôi sẽ luôn cố gắng hết mình cho hai mục tiêu này."
+  },
+  {
+    "id": "18",
+    "name": "Thiên",
+    "imgURL": "./assets/img/face_samples/thien.jpg",
+    "career": "Senior PHP Developer",
+    "description": "As a senior developer I'm always enjoy improving my skills as well as researching for new technologies. I'm also fond of front end development, interested in big data and love to work on large scale system.",
+    "description_vi": "Là một lập trình viên PHP, tôi cảm thấy thích thú trong việc nâng cao kỹ năng chuyên môn cũng như khả năng nghiên cứu công nghệ mới. Tôi yêu thích phát triển trên mảng Front-end, tôi quan tâm đến cơ sở dữ liệu lớn và làm việc trên trên những hệ thống quy mô rộng."
+  },
+  {
+    "id": "19",
+    "name": "Thư",
+    "imgURL": "./assets/img/face_samples/thu.jpg",
+    "career": "TechLooper Product Owner",
+    "description": "I'm a Product lover. I am eager to learn new things, hard-working and having a passion to understand deeply Business, Technology and UI/UX, which are 3 most important factors to decide success of an IT product.",
+    "description_vi": "Tôi dành tình yêu cho việc phát triển sản phẩm. Tôi luôn sẵn sàng để học hỏi những điều mới lạ, và luôn mong muốn có có cái nhìn sâu sắc hơn về Nghiệp Vụ, Kỹ Thuật, Trải Nghiệm Người Dùng, vốn là 3 yếu tố quan trọng nhất quyết định sự thành bại của một sản phẩm IT."
+  },
+  {
+    "id": "20",
+    "name": "Trinh",
+    "imgURL": "./assets/img/face_samples/trinh.jpg",
+    "career": "Senior Front-End Developer",
+    "description": "As a Front End Developer at TechLooper, my focus is understand users behavior and needs to provide the best UI/UX.",
+    "description_vi": "Là một lập trình viên Front-end cho TechLooper, tôi luôn tập trung vào việc tìm hiểu hành vi và nhu cầu của người dùng để có thể đưa ra những giải pháp UI/UX tốt nhất"
+  },
+  {
+    "id": "21",
+    "name": "Tuấn",
+    "imgURL": "./assets/img/face_samples/tuan.jpg",
+    "career": "Senior PHP Developer",
+    "description": "I’m a developer. I love coding and learning new technologies. My passion is create useful things for our beloved users.",
+    "description_vi": "Tôi là một lập trình viên. Tôi yêu thích lập trình và học hỏi những công nghệ mới. Đam mê của tôi là tạo ra những thứ có ích cho người sử dụng."
+  },
+  {
+    "id": "23",
+    "name": "Lý",
+    "imgURL": "./assets/img/face_samples/ly.jpg",
+    "career": "Senior Web Designer",
+    "description": "I love designing and exploring technologies. It's joyful to do something nice, meaningful and useful for users!",
+    "description_vi": "Tôi thích thiết kết và khám phá công nghệ. Thật vui khi làm được một cái gì đó dễ nhìn, có ý nghĩa và có ích cho người sử dụng!"
+  },
+  {
+    "id": "24",
+    "name": "Tân",
+    "imgURL": "./assets/img/face_samples/tan_nguyen.jpg",
+    "career": "Senior IT Engineer",
+    "description": "Supporting team to run, improve our internal system and our customer facing online products",
+    "description_vi": "Công việc của tôi là hỗ trợ đồng nghiệp trong nhóm vận hành, cải thiện hệ thống cũng như hỗ trợ người dùng khắc phục các vấn đề một cách nhanh chóng, hiệu quả."
+  }
+]
