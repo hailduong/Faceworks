@@ -9,7 +9,7 @@ var faceCareer = angular.module('faceCareer', [
 
 // Configure Route
 faceCareer.config(['$routeProvider',
-    function ($routeProvider, $locationProvider) {
+    function ($routeProvider) {
         $routeProvider.when('/', {
             templateUrl: 'partials/home.html',
             controller: 'sampleFaceCtrl'
@@ -17,7 +17,6 @@ faceCareer.config(['$routeProvider',
             templateUrl: 'partials/result.html',
             controller: 'resultCtrl'
         }).otherwise({redirectTo: '/'});
-        $locationProvider.html5Mode(true);
     }]);
 
 
