@@ -6,16 +6,6 @@
 		<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
 		<link rel="stylesheet" href="assets/facecareer.css"/>
-		<script src='bower_components/angularjs/angular.js'></script>
-		<script src='bower_components/angular-route/angular-route.js'></script>
-		<script src='bower_components/angular-touch/angular-touch.js'></script>
-		<script src='bower_components/angular-cookies/angular-cookies.min.js'></script>
-		<script src='bower_components/angular-translate/angular-translate.js'></script>
-		<script src='bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js'></script>
-		<script src='bower_components/jquery/dist/jquery.js'></script>
-		<script src='bower_components/bootstrap/dist/js/bootstrap.js'></script>
-		<script src='assets/js/app.js'></script>
-		<script src='assets/js/controllers.js'></script>
 	</head>
 	<body ng-controller="MainControl" ng-cloak>
 		<!-- Header -->
@@ -44,14 +34,6 @@
 				<!-- Facebook Share -->
 				<div class="facebook-share">
 					<div id="fb-root"></div>
-					<script>(function (d, s, id) {
-						var js, fjs = d.getElementsByTagName(s)[0];
-						if (d.getElementById(id)) return;
-						js = d.createElement(s);
-						js.id = id;
-						js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
-						fjs.parentNode.insertBefore(js, fjs);
-					}(document, 'script', 'facebook-jssdk'));</script>
 					<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
 				</div>
 				<!--/ Facebook Share -->
@@ -77,5 +59,23 @@
 			</div>
 		</div>
 		<!--/ Footer -->
+
+		<script src='bower_components/angularjs/angular.js'></script>
+		<script src='bower_components/angular-route/angular-route.js'></script>
+		<script src='bower_components/angular-touch/angular-touch.js'></script>
+		<script src='bower_components/angular-cookies/angular-cookies.min.js'></script>
+		<script src='bower_components/angular-translate/angular-translate.js'></script>
+		<script src='bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js'></script>
+		<script src='bower_components/jquery/dist/jquery.js'></script>
+		<script src='bower_components/bootstrap/dist/js/bootstrap.js'></script>
+		<script src='bower_components/tracking.js/build/tracking-min.js'></script>
+		<script src='bower_components/tracking.js/build/data/face-min.js'></script>
+
+		<script src='assets/js/app.js'></script>
+		<script src='assets/js/controllers.js'></script>
+
+
+		<script src="assets/js/controllers/HomeCtrl.js"></script>
+		<script src="assets/js/fb.js"></script>
 	</body>
 </html>
