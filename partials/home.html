@@ -1,4 +1,4 @@
-<div class="home-page" ng-controller="HomeCtrl">
+<div class="home-page" ng-controller="HomeCtrl" id="home_page">
 	<!-- Carousel -->
 	<div class="carousel sample-faces">
 		<div class="carousel-wrapper" ng-mouse-wheel-up="srollActiveFaceUp()" ng-mouse-wheel-down="srollActiveFaceDown()" ng-style="{'left':carouselWrapperPosition + 'px'}">
@@ -24,7 +24,7 @@
 		</div>
 	</div>
 	<div class="text-center use-facebook-photo">
-		<a class="btn-translucent" ng-click="onLoginWithFacebook()">
+		<a class="btn-translucent" ng-click="onLoginWithFacebook()" ng-disabled="isLoginFb">
 			<img class="facebook-icon" src="assets/img/icon_facebook.png" alt=""/>
 			<span>{{'UseFBProfile' | translate}}</span>
 		</a>

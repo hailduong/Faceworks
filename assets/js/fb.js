@@ -11,7 +11,7 @@ window.fbAsyncInit = function() {
 		console.log('statusChangeCallback');
 		console.log(response);
 
-		var scope = angular.element(document.getElementById("main")).scope();
+		var scope = angular.element(document.getElementById("home_page")).scope();
 		scope.$apply(function() {
 			scope.onFacebookStatusCallback(response.status);
 		});
