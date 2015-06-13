@@ -16,6 +16,8 @@ faceCareer.config(['$routeProvider',
         }).when('/result', {
             templateUrl: 'partials/result.html',
             controller: 'resultCtrl'
+        }).when('/resultfb', {
+            templateUrl: 'partials/result_fb.html',
         }).otherwise({redirectTo: '/'});
     }]);
 

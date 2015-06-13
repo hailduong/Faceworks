@@ -1,6 +1,4 @@
-angular.module('faceCareerControllers')
-
-.controller('HomeCtrl', function($rootScope, $scope, $location) {
+angular.module('faceCareerControllers').controller('HomeCtrl', function($rootScope, $scope, $location) {
 	$scope.isLoginFb = false;
 
 	$scope.onLoginWithFacebook = function() {
@@ -8,7 +6,7 @@ angular.module('faceCareerControllers')
 		FB.login(function(response) {
 			if (response.status === 'connected') {
 				$rootScope.fbID = response.authResponse.userID;
-				$location.url("/result");
+				$location.url("/resultfb");
 				$scope.$apply();
 			} else if (response.status === 'not_authorized') {
 				console.log("fail to login with facebbok", "not_authorized");
