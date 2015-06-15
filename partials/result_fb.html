@@ -6,13 +6,20 @@
 				<img ng-hide="isLoadedAvatar" src="http://www.njbuddies.org/images/avatar_man.png">
 				<div class="career-result text-center">
 					<div class="text-clip">
-						<strong title="{{career}}">{{career}} </strong>
+						<strong>{{faceResult.status | translate}} </strong>
 					</div>
 				</div>
 				<div class="face-detection-ring" style="top:10px; left: 60px" hidden></div>
 			</div>
 			<div class="result-content pull-left">
 				<span class="close-icon" ng-click="backHome()"></span>
+				<p>{{'Hello' | translate}} {{::faceResult.name}}</p>
+				<p>{{'YouLookLike' | translate}} <strong>{{::faceResult.job}}</strong>!</p>
+				<p ng-if="activatedLanguage === 'en'">{{::faceResult.description}}</p>
+				<p ng-if="activatedLanguage === 'vi'">{{::faceResult.description_vi}}</p>
+				<p>The
+					<a href="#">#FaceWorks</a>
+				</p>
 			</div>
 			<div style="position:relative; width:0px; height:0px">
 				<div id="marker"></div>

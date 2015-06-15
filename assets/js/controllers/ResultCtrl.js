@@ -1,7 +1,23 @@
 angular.module('faceCareerControllers').controller("ResultCtrl", function($rootScope, $scope, $location) {
 	$scope.isReady = false;
 	$scope.isLoadedAvatar = false;
-	$scope.career = "Loading...";
+
+	$scope.faceResult = {
+		status: 'Status_Loading'
+	};
+
+	if (typeof(FB) != "undefined") {
+		FB.api(
+			"/me", 
+			function (response) {
+				if (response && !response.error) {
+					console.log(response);
+					$scope.faceResult.name = response.first_name + " " + response.last_name;
+
+				}
+			}
+		);
+	}
 
 	var loadFacebookAvatar = function(url) {
 		var size = 200;
@@ -27,7 +43,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 				img2.setAttribute("id", "avatar_img");
 
 				$scope.isLoadedAvatar = true;
-				$scope.career = "Scanning ...";
+				$scope.faceResult.status = 'Status_Scanning';
 				$scope.$apply(function() {
 					$("#avatar").prepend(img2);
 				});
@@ -40,7 +56,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 					tracker.on('track', function(event) {
 						console.log(event);
 
-						$scope.career = "Checking your job ...";
+						$scope.faceResult.status = 'Status_Checking';
 						$scope.$apply();
 
 						event.data.forEach(function(rect) {
@@ -57,7 +73,8 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 						});
 
 						setTimeout(function(){
-							$scope.career = "I should be a cleaner";
+							$scope.faceResult.status = "CLEANER";
+							$scope.faceResult.job = "cleaner"
 							$scope.$apply();
 						}, 2000);
 					});
