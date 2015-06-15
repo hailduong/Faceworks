@@ -1,6 +1,7 @@
-angular.module('faceCareerControllers').controller("ResultCtrl", function($rootScope, $scope, $location) {
+angular.module('faceCareerControllers').controller("ResultCtrl", function($rootScope, $scope, $location, $http) {
 	$scope.isReady = false;
 	$scope.isLoadedAvatar = false;
+	$scope.isShowJobResult = false;
 
 	$scope.faceResult = {
 		status: 'Status_Loading'
@@ -17,6 +18,24 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 				}
 			}
 		);
+	}
+
+	var selectedJob = 0;
+	var jobs = null;
+	var loadJobList = function(callback) {
+		$http.get('assets/job.json').success(function (data) {
+	        var fbid = $rootScope.fbID + '';
+	        var number = '';
+	        for (var i = fbid.length - 1; i >= 0 && number.length < 4; i--) {
+	        	if (fbid[i] >= '0' && fbid[i] <= '9') {
+	        		number += fbid[i];
+	        	}
+	        }
+	        number = parseInt(number);
+	        selectedJob = number % data.length;
+	        jobs = data;
+	        if (callback) {callback();}
+	    });
 	}
 
 	var loadFacebookAvatar = function(url) {
@@ -73,8 +92,8 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 						});
 
 						setTimeout(function(){
-							$scope.faceResult.status = "CLEANER";
-							$scope.faceResult.job = "cleaner"
+							$scope.faceResult.status = null;
+							$scope.faceResult.job = jobs[selectedJob];
 							$scope.$apply();
 						}, 2000);
 					});
@@ -90,7 +109,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 	} else {
 		$scope.userAvatar = "http://graph.facebook.com/" + $rootScope.fbID + "/picture?type=large";
 		$scope.isReady = true;
-		loadFacebookAvatar($scope.userAvatar);
+		loadJobList(loadFacebookAvatar($scope.userAvatar));
 	}
 
 	$scope.backHome = function() {

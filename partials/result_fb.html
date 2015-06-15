@@ -6,7 +6,9 @@
 				<img ng-hide="isLoadedAvatar" src="http://www.njbuddies.org/images/avatar_man.png">
 				<div class="career-result text-center">
 					<div class="text-clip">
-						<strong>{{faceResult.status | translate}} </strong>
+						<strong ng-show='faceResult.job == null'>{{faceResult.status | translate}} </strong>
+						<strong ng-show="faceResult.job != null && activatedLanguage === 'en'">{{::faceResult.job.en.title}}</strong>
+						<strong ng-show="faceResult.job != null && activatedLanguage === 'vi'">{{::faceResult.job.vi.title}}</strong>
 					</div>
 				</div>
 				<div class="face-detection-ring" style="top:10px; left: 60px" hidden></div>
@@ -14,12 +16,17 @@
 			<div class="result-content pull-left">
 				<span class="close-icon" ng-click="backHome()"></span>
 				<p>{{'Hello' | translate}} {{::faceResult.name}}</p>
-				<p>{{'YouLookLike' | translate}} <strong>{{::faceResult.job}}</strong>!</p>
-				<p ng-if="activatedLanguage === 'en'">{{::faceResult.description}}</p>
-				<p ng-if="activatedLanguage === 'vi'">{{::faceResult.description_vi}}</p>
-				<p>The
-					<a href="#">#FaceWorks</a>
-				</p>
+				<div ng-show="faceResult.job != null">
+					<p>{{'YouLookLike' | translate}} 
+						<strong ng-if="activatedLanguage === 'en'">{{::faceResult.job.en.title}}</strong>
+						<strong ng-if="activatedLanguage === 'vi'">{{::faceResult.job.vi.title}}</strong>
+					!</p>
+					<p ng-if="activatedLanguage === 'en'">{{::faceResult.job.en.desc}}</p>
+					<p ng-if="activatedLanguage === 'vi'">{{::faceResult.job.vi.desc}}</p>
+					<p>The
+						<a href="#">#FaceWorks</a>
+					</p>
+				</div>
 			</div>
 			<div style="position:relative; width:0px; height:0px">
 				<div id="marker"></div>
