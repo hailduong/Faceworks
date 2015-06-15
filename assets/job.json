@@ -1,0 +1,202 @@
+[
+	{
+		"en": {
+			"title": "Chocolatier",
+			"desc": "You should consider life as a professional chocolatier. Far more than just a chocolate maker, a chocolatier is a professionally trained chef who specializes in all things chocolate, from creation, to creativity, to history."
+		},
+		"vi": {
+			"title": "Chuyên gia Sô cô la",
+			"desc": "Bạn nên suy nghĩ về cuộc sống của một chuyên gia về sô cô la. Không chỉ là một nhà sản xuất, bạn còn là một đầu bếp được đào tạo bài bản và chuyên sâu về tất cả những gì liên qua đến sô cô la, từ việc sáng tạo cho đến chế biến công thức mới."
+		}
+	},
+	{
+		"en": {
+			"title": "Dog walker",
+			"desc": "You make a living by applying it to caring for other people’s dogs as they would their own. Dog walkers are often self-employed, set their own schedules, and have the freedom to pick and chose their clients."
+		},
+		"vi": {
+			"title": "Người dắt chó đi dạo",
+			"desc": "Bạn kiếm sống bằng cách nhận chăm sóc cún cưng của người khác như là của riêng mình. Bạn tự chủ, tự do để thiết lập lịch trình của mình và chọn bất cứ khách hàng nào mà bạn muốn."
+		}
+	},
+	{
+		"en": {
+			"title": "Dance instructor",
+			"desc": "Getting paid to teach others to be less awkward on the dance floor and finally shake their stuff with confidence? Yes, please."
+		},
+		"vi": {
+			"title": "Người dạy nhảy",
+			"desc": "Bạn kiếm tiền bằng cách dạy người khác làm sao để không còn vụng về trên sàn nhảy, giúp họ tự tin và điêu luyện hơn."
+		}
+	},
+	{
+		"en": {
+			"title": "Spa manager",
+			"desc": "Wish every day was a spa day? Well, it can be (technically) because you’re the spa manager."
+		},
+		"vi": {
+			"title": "Quản lý Spa",
+			"desc": "Người ta luôn mong ước rằng mỗi ngày đều được tận hưởng như trong spa. Đó là chuyện nhỏ đối với bạn (về mặt kĩ thuật), bởi vì bạn chính là một người quản lý spa."
+		}
+	},
+	{
+		"en": {
+			"title": "Toy idea professional",
+			"desc": "Do you refuse to grow up? While this may give you trouble in other parts of your life, your childish imagination can run free and make you a living as a toy idea professional."
+		},
+		"vi": {
+			"title": "Chuyên gia sáng tạo đồ chơi",
+			"desc": "Bạn luôn mong muốn sống trong thế giới tuổi thơ? Trong khi điều này có thể mang đến vài điều rắc rối trong cuộc sống thường nhật của bạn, thế nhưng trí tưởng tượng trẻ con và phong phú sẽ giúp bạn thành công với công việc của một chuyên gia sáng tạo đồ chơi chuyên nghiệp."
+		}
+	},
+	{
+		"en": {
+			"title": "Diving Instructor",
+			"desc": "The ocean doesn’t scare you; you’re fascinated by its beauty, depth, and mystery, and want to help others learn how to experience it as well."
+		},
+		"vi": {
+			"title": "Thợ Lặn",
+			"desc": "Đối với bạn, đại dương sâu thăm thẳm kia không thành vấn đề, bạn bị cuốn hút bởi vẻ đẹp, sự huyền bí của nó, và muốn giúp những người khác tìm hiểu các trải nghiệm mê hoặc nơi đáy biển"
+		}
+	},
+	{
+		"en": {
+			"title": "Ecologist",
+			"desc": "Ecologists are the superheroes of nature, working tirelessly to find and study relationships between the environment and all that affects it in order to help preserve it in all its glory."
+		},
+		"vi": {
+			"title": "Nhà sinh thái học",
+			"desc": "Nhà sinh thái học là những siêu anh hùng của thiên nhiên, bạn làm việc không mệt mỏi để tìm và nghiên cứu mối quan hệ giữa môi trường và tất cả những gì ảnh hưởng đến nó, để giúp giữ gìn nguồn tài nguyên của vũ trụ"
+		}
+	},
+	{
+		"en": {
+			"title": "Florist",
+			"desc": "Flowers are associated with the happiest and saddest times in people’s lives; a florist plays a large role in what these memories look like."
+		},
+		"vi": {
+			"title": "Người bán hoa",
+			"desc": "Hoa là tạo vật luôn hiện diện trong thời khắc hạnh phúc nhất và buồn nhất trong đời sống con người; một người bán hoa như bạn có thể nói là đóng một vai trò lớn trong những dịp kỉ niệm của tất cả mọi người."
+		}
+	},
+	{
+		"en": {
+			"title": "Fundraiser",
+			"desc": "Asking people for money is never easy, but some people have an uncanny knack for knowing when and how to ask tactfully – and get it. You have exceptional people, and organization skills, you have the foundation to be a successful fundraiser."
+		},
+		"vi": {
+			"title": "Nhà kêu gọi tài trợ",
+			"desc": "Yêu cầu người khác cho tiền không bao giờ là dễ dàng, nhưng một số người có một sở trường kỳ lạ là biết khi nào và làm cách nào để quyên tiền một cách khéo léo - và nhận được nó. Bạn là người đặc biệt đó, cùng các kỹ năng tổ chức, bạn luôn có được một buổi gây quỹ thành công."
+		}
+	},
+	{
+		"en": {
+			"title": "Hair stylist",
+			"desc": "Styling someone’s hair can change their whole look, as well as renew their confidence and offer the feeling of a fresh start. You are a creative individuals with attention to detail and excellent people skills are a great fit for this career."
+		},
+		"vi": {
+			"title": "Nhà tạo mẫu tóc",
+			"desc": "Tạo kiểu tóc cho một ai đó có thể thay đổi toàn bộ diện mạo của họ, cũng như làm mới niềm tin và tạo nên cảm giác của một sự khởi đầu mới. Bạn là một cá nhân sáng tạo với sự quan tâm đến từng chi tiết, người tuyệt vời như bạn rất phù hợp cho công việc này."
+		}
+	},
+	{
+		"en": {
+			"title": "Landscape architect",
+			"desc": "This is a fun job for someone like you who is creative and passionate about nature, and isn’t afraid to get their hands dirty."
+		},
+		"vi": {
+			"title": "Kiến trúc sư cảnh quan",
+			"desc": "Đây là một công việc thú vị cho một người như bạn: sáng tạo và đam mê thiên nhiên, và bạn không hề ngại bẩn tay."
+		}
+	},
+	{
+		"en": {
+			"title": "Meteorologist",
+			"desc": "Were you more interested in playing ‘weather channel’, dramatically waving your arms and predicting storms in front of a blank wall, than in playing house or practicing soccer growing up?"
+		},
+		"vi": {
+			"title": "Người dự báo khí tượng",
+			"desc": "Bạn thích thú khi được làm việc một chương trình truyền hình dự báo thời tiết, chỉ cần bạn vẫy cánh tay và nói về một cơn bão là tất cả mọi người đều phải ở nhà thay vì ra sân chơi bóng."
+		}
+	},
+	{
+		"en": {
+			"title": "Nanny",
+			"desc": "You were the best babysitter in the neighborhood, and you have more confidence around children than some of your friends with kids. Nannies are more than just professional babysitters – they’re essentially moms who get to clock out and go home alone at the end of the day."
+		},
+		"vi": {
+			"title": "Người trông trẻ",
+			"desc": "Bạn là người giữ trẻ tốt nhất trong khu phố, bạn cảm thấy tự tin và vui vẻ khi xung quanh mình toàn những thiên thần nhỏ."
+		}
+	},
+	{
+		"en": {
+			"title": "Party planner",
+			"desc": "Is your life just one big party? Party planners can actually answer ‘yes’ to that, but they’re on the business side of the fun, morphing plain rooms into someone’s dream party, gathering, or event."
+		},
+		"vi": {
+			"title": "Nhà hoạch định sự kiện",
+			"desc": "Có phải cuộc sống của bạn luôn là một bữa tiệc lớn? Bạn đang kinh doanh trên những niềm vui, sự hào hứng và những giấc mơ."
+		}
+	},
+	{
+		"en": {
+			"title": "Personal shopper",
+			"desc": "If you’re the friend everyone goes to for advice on what to buy – from clothes, to accessories, to groceries – stop doling your expertise out for free! You will get paid to guide people in their shopping decisions."
+		},
+		"vi": {
+			"title": "Người mua sắm cá nhân",
+			"desc": "Bạn là người mà tất cả mọi người tìm đến bạn để được tư vấn về những gì nên mua - từ quần áo, phụ kiện, đồ gia dụng... Bạn được trả tiền để hướng dẫn mọi người ra các quyết định mua sắm của họ."
+		}
+	},
+	{
+		"en": {
+			"title": "Private detective",
+			"desc": "This is your chance to bring your childhood games of ‘spy’ to life! If you’re undeterred with digging deep and exposing other people’s dirty laundry – because, hey, you didn’t cause it, you’re just airing it out – then you’ve got what it takes for private detective work."
+		},
+		"vi": {
+			"title": "Thám tử tư",
+			"desc": "Bạn không bao giờ nản lòng với việc đào sâu và phơi bày bí mật của người khác - bởi vì, nguồn thu nhập của bạn từ đó mà ra."
+		}
+	},
+	{
+		"en": {
+			"title": "Veterinarian",
+			"desc": "Your love for animals extends far beyond just wanting a furry companion waiting for you at home – you want to help all animals live healthier and happier lives."
+		},
+		"vi": {
+			"title": "Bác sĩ thú y",
+			"desc": "Tình yêu của bạn dành cho động vật bao la hơn tất cả mọi người- bạn muốn giúp đỡ tất cả các loài động vật sống khỏe mạnh và hạnh phúc hơn."
+		}
+	},
+	{
+		"en": {
+			"title": "White hat hacker",
+			"desc": "You know you have the computer skills to do some real damage as a hacker but, morally, you want to do good in this world. You can have it both ways as a white hat hacker, also known as an ethical hacker."
+		},
+		"vi": {
+			"title": "Hacker mũ trắng",
+			"desc": "Bạn biết các kỹ năng máy tính để xâm nhập và gây thiệt hại cho một tổ chức nếu bạn muốn, nhưng về mặt đạo đức, bạn là người tốt trong thế giới này."
+		}
+	},
+	{
+		"en": {
+			"title": "Pilot",
+			"desc": "You are not the one who stay in one place for long? Make a career of it as a pilot, and get paid to fly around the world on a daily basis."
+		},
+		"vi": {
+			"title": "Phi công",
+			"desc": "Bạn được trả tiền để bay vòng quanh thế giới hằng ngày và không bao giờ ở yên một chỗ."
+		}
+	},
+	{
+		"en": {
+			"title": "Zoologist",
+			"desc": "Want to work with animals at the zoo, but don’t want to pick up elephant poop? Zoologists exhibit a genuine care for animals and desire to share them with the public for education and entertainment purposes."
+		},
+		"vi": {
+			"title": "Nhà động vật học",
+			"desc": "Bạn  làm việc với những con vật ở sở thú. Nhà động vật học như bạn luôn muốn mang lại dịch vụ chăm sóc động vật, và chia sẻ với công chúng với mục đích giáo dục và giải trí."
+		}
+	}
+]
