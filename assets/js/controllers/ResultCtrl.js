@@ -1,4 +1,4 @@
-angular.module('faceCareerControllers').controller("ResultCtrl", function($rootScope, $scope, $location, $http) {
+angular.module('faceCareerControllers').controller("ResultCtrl", function($rootScope, $scope, $location, $http, getAccountStatus) {
 	$scope.isReady = false;
 	$scope.isLoadedAvatar = false;
 	$scope.isShowJobResult = false;
@@ -14,7 +14,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 				if (response && !response.error) {
 					console.log(response);
 					$scope.faceResult.name = response.first_name + " " + response.last_name;
-
+					$scope.user_email = response.email;
 				}
 			}
 		);
@@ -117,6 +117,6 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 	}
 
 	$scope.onRegister = function() {
-
+		getAccountStatus($scope.user_email, function(){}, function(){})
 	}
 });

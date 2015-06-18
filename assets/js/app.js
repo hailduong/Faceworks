@@ -4,7 +4,8 @@ var faceCareer = angular.module('faceCareer', [
     'faceCareerControllers',
     'ngTouch',
     'pascalprecht.translate',
-    'ngCookies'
+    'ngCookies',
+    'vietnameWorkJobAlert'
 ]);
 
 // Configure Route
