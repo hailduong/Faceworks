@@ -1,7 +1,42 @@
-angular.module('faceCareerControllers').controller("ResultCtrl", function($rootScope, $scope, $location) {
+angular.module('faceCareerControllers').controller("ResultCtrl", function($rootScope, $scope, $location, $http) {
 	$scope.isReady = false;
 	$scope.isLoadedAvatar = false;
-	$scope.career = "Loading...";
+	$scope.isShowJobResult = false;
+
+	$scope.faceResult = {
+		status: 'Status_Loading'
+	};
+
+	if (typeof(FB) != "undefined") {
+		FB.api(
+			"/me", 
+			function (response) {
+				if (response && !response.error) {
+					console.log(response);
+					$scope.faceResult.name = response.first_name + " " + response.last_name;
+
+				}
+			}
+		);
+	}
+
+	var selectedJob = 0;
+	var jobs = null;
+	var loadJobList = function(callback) {
+		$http.get('assets/job.json').success(function (data) {
+	        var fbid = $rootScope.fbID + '';
+	        var number = '';
+	        for (var i = fbid.length - 1; i >= 0 && number.length < 4; i--) {
+	        	if (fbid[i] >= '0' && fbid[i] <= '9') {
+	        		number += fbid[i];
+	        	}
+	        }
+	        number = parseInt(number);
+	        selectedJob = number % data.length;
+	        jobs = data;
+	        if (callback) {callback();}
+	    });
+	}
 
 	var loadFacebookAvatar = function(url) {
 		var size = 200;
@@ -27,7 +62,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 				img2.setAttribute("id", "avatar_img");
 
 				$scope.isLoadedAvatar = true;
-				$scope.career = "Scanning ...";
+				$scope.faceResult.status = 'Status_Scanning';
 				$scope.$apply(function() {
 					$("#avatar").prepend(img2);
 				});
@@ -40,7 +75,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 					tracker.on('track', function(event) {
 						console.log(event);
 
-						$scope.career = "Checking your job ...";
+						$scope.faceResult.status = 'Status_Checking';
 						$scope.$apply();
 
 						event.data.forEach(function(rect) {
@@ -57,7 +92,8 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 						});
 
 						setTimeout(function(){
-							$scope.career = "I should be a cleaner";
+							$scope.faceResult.status = null;
+							$scope.faceResult.job = jobs[selectedJob];
 							$scope.$apply();
 						}, 2000);
 					});
@@ -73,7 +109,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 	} else {
 		$scope.userAvatar = "http://graph.facebook.com/" + $rootScope.fbID + "/picture?type=large";
 		$scope.isReady = true;
-		loadFacebookAvatar($scope.userAvatar);
+		loadJobList(loadFacebookAvatar($scope.userAvatar));
 	}
 
 	$scope.backHome = function() {

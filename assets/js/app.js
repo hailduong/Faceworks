@@ -35,7 +35,12 @@ var translationsEN = {
     MyNameIs: 'My name is',
     Sorry: 'Sorry if we did not get your job right! <br/> You can tell us about your job, and we will keep you updated with best jobs.',
     EmailMe: 'Email Me Jobs',
-    EmailMeUrl: 'http://www.vietnamworks.com/jobalert'
+    EmailMeUrl: 'http://www.vietnamworks.com/jobalert',
+    YouLookLike: 'You look like a',
+
+    Status_Loading: 'Loading ...',
+    Status_Scanning: 'Scanning ...',
+    Status_Checking: 'Checking your job ...',
 };
 
 var translationsVI = {
@@ -50,7 +55,12 @@ var translationsVI = {
     MyNameIs: 'Tên tôi là',
     Sorry: 'Rất tiếc nếu chúng tôi đoán không đúng công việc của bạn! <br/> Hãy cho chúng tôi biết bạn làm gì, chúng tôi sẽ giúp bạn cập nhật những công việc tốt nhất.',
     EmailMe: 'Gửi Việc Cho Tôi',
-    EmailMeUrl: 'http://www.vietnamworks.com/tao-thong-bao-viec-lam'
+    EmailMeUrl: 'http://www.vietnamworks.com/tao-thong-bao-viec-lam',
+    YouLookLike: 'Bạn trông giống như',
+
+    Status_Loading: 'Loading ...',
+    Status_Scanning: 'Scanning ...',
+    Status_Checking: 'Checking your job ...',
 };
 
 faceCareer.config(['$translateProvider', function ($transProvider) {
