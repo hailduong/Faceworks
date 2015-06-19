@@ -1,4 +1,4 @@
-angular.module('faceCareerControllers').controller("ResultCtrl", function($rootScope, $scope, $location, $http, getAccountStatus) {
+angular.module('faceCareerControllers').controller("ResultCtrl", function($rootScope, $scope, $location, $http) {
 	$scope.isReady = false;
 	$scope.isLoadedAvatar = false;
 	$scope.isShowJobResult = false;
@@ -13,6 +13,8 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 			function (response) {
 				if (response && !response.error) {
 					console.log(response);
+					$scope.first_name = response.first_name;
+					$scope.last_name = response.last_name;
 					$scope.faceResult.name = response.first_name + " " + response.last_name;
 					$scope.user_email = response.email;
 				}
@@ -95,7 +97,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 							$scope.faceResult.status = null;
 							$scope.faceResult.job = jobs[selectedJob];
 							$scope.$apply();
-						}, 2000);
+						}, 1000);
 					});
 				}, 1000);
 			}, 500);
@@ -116,7 +118,32 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 		$location.url('/');
 	}
 
+	$scope.isRegistering = false;
 	$scope.onRegister = function() {
-		getAccountStatus($scope.user_email, function(){}, function(){})
+		$scope.isRegistering = true;
+		$.ajax({
+			url: "/vnw_register",
+			type: 'POST',
+			contentType: 'application/json',
+			dataType: "json",
+			data: JSON.stringify({
+				"email": $scope.user_email,
+				"first_name": $scope.first_name,
+				"last_name": $scope.last_name
+			}),
+			success: function (data) { 
+				if (data.error && data.error > 0) {
+					alert(data.message || "Failed to call the REST api on VietnamWorks");
+				} else {
+					alert(data.message || "success");
+				}
+				$scope.isRegistering = false;
+				$scope.$apply();
+			},
+			error: function () { 
+				$scope.isRegistering = false;
+				$scope.$apply();
+			},
+		});
 	}
 });
