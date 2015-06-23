@@ -4,8 +4,16 @@
 		<meta charset="UTF-8">
 		<title>FaceWorks</title>
 		<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+
+		<!-- build:css(.) styles/vendor.css -->
+		<!-- bower:css -->
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:css(.) styles/app.css -->
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
 		<link rel="stylesheet" href="assets/facecareer.css"/>
+		<!-- endbuild -->
 	</head>
 	<body ng-controller="MainControl" ng-cloak>
 		<!-- Header -->
@@ -76,11 +84,11 @@
 		<!-- endbower -->
 		<!-- endbuild -->
 		
-		<!-- build:js({.tmp,.}) scripts/face.js -->
+		<!-- build:js(.) scripts/face.js -->
 		<script src='bower_components/tracking.js/build/data/face-min.js'></script>
 		<!-- endbuild -->
 
-		<!-- build:js({.tmp,.}) scripts/app.js -->
+		<!-- build:js(.) scripts/app.js -->
 		<script src='assets/js/app.js'></script>
 		<script src='assets/js/controllers.js'></script>
 

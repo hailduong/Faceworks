@@ -8,6 +8,18 @@ module.exports = function(grunt) {
 			app: ".",
 			dist: "dist"
 		},
+		clean: {
+			dist: {
+				files: [{
+					dot: true,
+					src: [
+						'.tmp',
+						'<%= config.dist %>/{,*/}*',
+						'!<%= config.dist %>/.git{,*/}*'
+					]
+        		}]
+      		},
+		},
       	wiredep: {
 			app: {
 				src: ['index.html'],
@@ -39,8 +51,8 @@ module.exports = function(grunt) {
 				flow: {
 					html: {
 						steps: {
-							js: ['concat'],
-							css: ['concat']
+							js: ['concat', 'uglifyjs'],
+							css: ['concat', 'cssmin']
 						},
  						post: {}
           			}
@@ -68,15 +80,54 @@ module.exports = function(grunt) {
 				]
 			}
 		},
+		ngAnnotate: {
+			dist: {
+				files: [{
+					expand: true,
+					cwd: '.tmp/concat/scripts',
+					src: ['*.js', '!oldieshim.js'],
+					dest: '.tmp/concat/scripts'
+				}]
+			}
+		},
+		htmlmin: {
+			dist: {
+				options: {
+					collapseWhitespace: true,
+					conservativeCollapse: true,
+					collapseBooleanAttributes: true,
+					removeCommentsFromCDATA: true,
+					removeOptionalTags: true,
+					keepClosingSlash: true
+				},
+				files: [{
+					expand: true,
+					cwd: '<%= config.dist %>',
+					src: ['*.html', 'partials/{,*/}*.html'],
+					dest: '<%= config.dist %>'
+				}]
+			}
+	    },
+	    cdnify: {
+	    	dist: {
+	    		html: ['<%= config.dist %>/*.html']
+	    	}
+		},
 	});
 
 	grunt.registerTask('build', [
+		'clean:dist',
 		'wiredep',
 		'useminPrepare',
 		'concat',
-		'filerev',
+		'ngAnnotate',
 		'copy:dist',
-		'usemin'
+		'cdnify',
+		'cssmin',
+		'uglify',
+		'filerev',
+		'usemin',
+		'htmlmin'
 	]);
 
 	grunt.registerTask('default', [
