@@ -41,6 +41,7 @@ var translationsEN = {
     Status_Loading: 'Loading ...',
     Status_Scanning: 'Scanning ...',
     Status_Checking: 'Checking your job ...',
+    Processing: 'Processing ...'
 };
 
 var translationsVI = {
@@ -61,6 +62,7 @@ var translationsVI = {
     Status_Loading: 'Loading ...',
     Status_Scanning: 'Scanning ...',
     Status_Checking: 'Checking your job ...',
+    Processing: 'Đang gửi ...'
 };
 
 faceCareer.config(['$translateProvider', function ($transProvider) {
