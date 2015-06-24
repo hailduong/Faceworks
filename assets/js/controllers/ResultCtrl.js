@@ -81,7 +81,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 						$scope.$apply();
 
 						event.data.forEach(function(rect) {
-							$("#marker").addClass("face-detection-ring animated bounceIn");
+							$("#marker").addClass("face-detection-ring animated fadeIn");
 							$("#marker").css({ 
 								top: (rect.y + 10) + "px",
 								left: (rect.x + 10) + "px",

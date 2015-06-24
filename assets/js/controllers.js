@@ -6,7 +6,7 @@ faceCareerControllers.factory('sharedResultService', function () {
     return {
         sharedResult: 11,
         numberOfItem: 23
-    }
+    };
 });
 
 // Controller
@@ -17,7 +17,7 @@ faceCareerControllers.controller('sampleFaceCtrl', function ($scope, $http, $loc
         $scope.numberOfSampleFaces = data.length;
         $scope.activeImage = sharedResultService.sharedResult;
         $scope.carouselPosition = ( 11 - sharedResultService.sharedResult) * 200 + 100;
-        $scope.carouselWidth = ($scope.numberOfSampleFaces) * 200 + 20 + "px";
+        $scope.carouselWidth = ($scope.numberOfSampleFaces) * 200 + 22 + "px";
         var carouselWidth = $('.sample-faces').width();
         $scope.carouselWrapperPosition = (carouselWidth - (($scope.numberOfSampleFaces) * 200 + 20 )) / 2;
         $(window).resize(function () {
@@ -83,7 +83,7 @@ faceCareerControllers.controller('sampleFaceCtrl', function ($scope, $http, $loc
     })
 });
 
-faceCareerControllers.controller('resultCtrl', function ($scope, $http, $location, sharedResultService) {
+faceCareerControllers.controller('resultCtrl', function ($scope, $rootScope, $http, $location, sharedResultService) {
     $http.get('assets/face_sample.json').success(function (data) {
         sharedResultService.sharedResult = parseInt($location.search().id, 10);
         sharedResultService.numberOfItem = data.length;
@@ -102,7 +102,32 @@ faceCareerControllers.controller('resultCtrl', function ($scope, $http, $locatio
 
 
     $scope.backHome = function () {
-        $location.url('/')
+        $location.url('/');
+    };
+
+    $scope.isLoginFb = false;
+
+    $scope.onLoginWithFacebook = function () {
+        $scope.isLoginFb = true;
+        FB.login(function (response) {
+            if (response.status === 'connected') {
+                $rootScope.fbID = response.authResponse.userID;
+                $location.url("/resultfb");
+                $scope.$apply();
+            } else if (response.status === 'not_authorized') {
+                console.log("fail to login with facebbok", "not_authorized");
+                $scope.isLoading = false;
+                $scope.$apply();
+            } else {
+                console.log("fail to login with facebbok");
+                $scope.isLoading = false;
+                $scope.$apply();
+            }
+        }, {scope: 'public_profile,email'});
+    };
+
+    $scope.onFacebookStatusCallback = function (status) {
+        $scope.isLoginFb = true;
     };
 
     $(function () {
@@ -114,8 +139,8 @@ faceCareerControllers.controller('resultCtrl', function ($scope, $http, $locatio
                     });
                 }
             }
-        })
-    })
+        });
+    });
 
 });
 

@@ -1,4 +1,4 @@
-<div class="result">
+<div class="result animated fadeIn">
 	<!-- Chosen Face -->
 	<div class="chosen-face">
 		<div class="chosen-face-wrapper clearfix">
@@ -18,21 +18,25 @@
 				<p ng-if="activatedLanguage === 'en'">{{::faceResult.description}}</p>
 				<p ng-if="activatedLanguage === 'vi'">{{::faceResult.description_vi}}</p>
 				<p>The
-					<a href="">#FaceWorks</a>
+					<a href="/#">#FaceWorks</a>
 				</p>
 			</div>
 		</div>
 	</div>
 	<!--/ Chosen Face -->
-	<!-- Email Me Jobs -->
-	<div class="email-me-jobs">
-		<p class="lead text-center" data-translate="Sorry"></p>
-		<div class="text-center btn-email-me-jobs">
-			<a class="btn-translucent" ng-href="{{'EmailMeUrl' | translate}}" target="_blank">
-				<img class="email-icon" src="assets/img/icon_email.png" alt=""/>
-				<span>{{'EmailMe' | translate}}</span>
-			</a>
+	<!-- Photos from Facebook -->
+	<div class="text-center error-wrapper" hidden>
+		<div class="alert alert-danger" role="alert">
+			<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+			<span class="sr-only">Error:</span>
+			There is an error with getting your photo from Facebook. Please try again!
 		</div>
 	</div>
-	<!--/ Email Me Jobs -->
+	<div class="text-center use-facebook-photo">
+		<a class="btn-translucent" ng-click="onLoginWithFacebook()" ng-disabled="isLoginFb">
+			<img class="facebook-icon" src="assets/img/icon_facebook.png" alt=""/>
+			<span>{{'UseFBProfile' | translate}}</span>
+		</a>
+	</div>
+	<p class="ps text-center">{{'PS' | translate}}</p>
 </div>
