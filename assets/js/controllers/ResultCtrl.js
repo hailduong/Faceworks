@@ -17,7 +17,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 					$scope.last_name = response.last_name;
 					$scope.faceResult.name = response.first_name + " " + response.last_name;
 					$scope.user_email = response.email;
-
+					$scope.gender = response.gender;
 					$scope.onRegister();
 				}
 			}
@@ -158,7 +158,8 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 			name: ($scope.activatedLanguage == 'en'?translationsEN.YouLookLike:translationsVI.YouLookLike) + " <b>" + $scope.faceResult.job[$scope.activatedLanguage].title + "</b>",
 			description: $scope.faceResult.job[$scope.activatedLanguage].desc,
 			caption: "Faceworks - " + ($scope.activatedLanguage == 'en'?translationsEN.WhichJobDoILook:translationsVI.WhichJobDoILook),
-			link: window.location.href 
+			link: window.location.href ,
+			picture: $scope.gender == "male"?$scope.faceResult.job.picture.male:scope.faceResult.job.picture.female
 		}, function(response){});
 	}
 });
