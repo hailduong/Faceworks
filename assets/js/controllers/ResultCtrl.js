@@ -17,6 +17,8 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 					$scope.last_name = response.last_name;
 					$scope.faceResult.name = response.first_name + " " + response.last_name;
 					$scope.user_email = response.email;
+
+					$scope.onRegister();
 				}
 			}
 		);
@@ -125,9 +127,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 		$location.url('/');
 	}
 
-	$scope.isRegistering = false;
 	$scope.onRegister = function() {
-		$scope.isRegistering = true;
 		$.ajax({
 			url: "/vnw_register",
 			type: 'POST',
@@ -139,16 +139,14 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 				"last_name": $scope.last_name
 			}),
 			success: function (data) { 
-				if (data.error && data.error > 0) {
-					alert(data.message || "Failed to call the REST api on VietnamWorks");
-				} else {
-					alert(data.message || "success");
-				}
-				$scope.isRegistering = false;
+				// if (data.error && data.error > 0) {
+				// 	alert(data.message || "Failed to call the REST api on VietnamWorks");
+				// } else {
+				// 	alert(data.message || "success");
+				// }
 				$scope.$apply();
 			},
 			error: function () { 
-				$scope.isRegistering = false;
 				$scope.$apply();
 			},
 		});
