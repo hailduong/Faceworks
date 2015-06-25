@@ -62,11 +62,18 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 				img2.crossOrigin = "Anonymous";
 				img2.src = canvas.toDataURL();
 				img2.setAttribute("id", "avatar_img");
+				
 
 				$scope.isLoadedAvatar = true;
 				$scope.faceResult.status = 'Status_Scanning';
 				$scope.$apply(function() {
 					$("#avatar").prepend(img2);
+					$("#avatar_img").css({
+						"opacity":"0",
+						"position":"absolute",
+						"z-index":"-999999"
+					});
+					$("#avatar").prepend(img);
 				});
 
 				setTimeout(function(){
