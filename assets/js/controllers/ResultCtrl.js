@@ -151,4 +151,14 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 			},
 		});
 	}
+
+	$scope.onShare = function() {
+		FB.ui({
+			method: 'feed',
+			name: ($scope.activatedLanguage == 'en'?translationsEN.YouLookLike:translationsVI.YouLookLike) + " <b>" + $scope.faceResult.job[$scope.activatedLanguage].title + "</b>",
+			description: $scope.faceResult.job[$scope.activatedLanguage].desc,
+			caption: "Faceworks - " + ($scope.activatedLanguage == 'en'?translationsEN.WhichJobDoILook:translationsVI.WhichJobDoILook),
+			link: window.location.href 
+		}, function(response){});
+	}
 });
