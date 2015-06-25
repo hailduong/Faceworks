@@ -61,7 +61,8 @@
 			</div>
 		</div>
 		<div class="text-center btn-email-me-jobs">
-			<a class="btn-translucent" ng-click="onRegister()" ng-disabled="isRegistering">
+			<!-- <a class="btn-translucent" ng-click="onRegister()" ng-disabled="isRegistering"> -->
+			<a class="btn-translucent" ng-href="{{'EmailMeUrl' | translate}}" target="_blank">
 				<img class="email-icon" src="assets/img/icon_email.png" alt=""/>
 				<span ng-hide='isRegistering'>{{'EmailMe' | translate}}</span>
 				<span ng-show='isRegistering'>{{'Processing' | translate}}</span>
