@@ -183,7 +183,7 @@ h1.title small {
   height: 200px;
   -webkit-user-drag: none;
 }
-.home-page .facebook-icon {
+.use-facebook-photo .facebook-icon {
   width: 31px;
   height: 31px;
 }
@@ -192,6 +192,7 @@ h1.title small {
   font-weight: 400;
   color: #a04747;
   display: inline-block;
+  padding: 7px 15px 5px;
 }
 .error-wrapper .alert span.glyphicon {
   color: #a04747;
@@ -219,6 +220,7 @@ h1.title small {
 }
 .result .chosen-face {
   padding: 0 70px;
+  margin-bottom: 50px;
 }
 .result .chosen-face-wrapper {
   background: #fff;
@@ -236,7 +238,6 @@ h1.title small {
   font-weight: 300;
 }
 .result .face {
-  cursor: pointer;
   -webkit-transition: background 0.3s, box-shadow 0.3s, padding-left 0.3s, padding-right 0.3s;
   -o-transition: background 0.3s, box-shadow 0.3s, padding-left 0.3s, padding-right 0.3s;
   transition: background 0.3s, box-shadow 0.3s, padding-left 0.3s, padding-right 0.3s;
@@ -273,11 +274,20 @@ h1.title small {
   height: 200px;
 }
 .result .email-me-jobs p.lead {
-  margin: 50px 0 20px;
+  margin: 0 0 20px;
 }
 .result .email-me-jobs .email-icon {
   width: 25px;
   height: 20px;
+}
+.result .share-result-fb {
+  position: absolute;
+  right: 15px;
+  bottom: 7px;
+  font-size: 14px;
+}
+.result .share-result-fb .glyphicon {
+  color: #1e8cbe;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .result .chosen-face-wrapper .result-content {
@@ -342,10 +352,10 @@ h1.title small {
   color: #e8f0f5;
   font-weight: 300;
   text-decoration: none;
+  cursor: pointer;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  cursor: pointer;
 }
 .btn-translucent * {
   display: inline-block;
@@ -364,6 +374,31 @@ h1.title small {
 }
 p.ps {
   margin-bottom: 90px;
+}
+.animated {
+  -webkit-animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
+  -o-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+.message-wrapper .alert {
+  display: inline-block;
+  font-weight: 400;
+  padding: 7px 15px 5px;
+}
+.message-wrapper .alert-danger {
+  background: #e7e1eb;
+  color: #a04747;
+}
+.message-wrapper .alert-danger span.glyphicon {
+  color: #a04747;
+}
+.message-wrapper .alert-success {
+  color: #20832a;
+  background: #e7ffe5;
+}
+.message-wrapper .alert-success span.glyphicon {
+  color: #20832a;
 }
 @media (max-width: 767px) {
   p.ps {

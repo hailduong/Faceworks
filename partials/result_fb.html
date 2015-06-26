@@ -3,28 +3,37 @@
 	<div class="chosen-face">
 		<div class="chosen-face-wrapper clearfix">
 			<div class="active face pull-left relative" id="avatar">
-				<img ng-hide="isLoadedAvatar" src="assets/img/logo_face.png">
+				<img ng-hide="isLoadedAvatar" src="assets/img/fw_photo_placeholder.png">
 				<div class="career-result text-center">
 					<div class="text-clip">
 						<strong ng-if='faceResult.job == null'>{{faceResult.status | translate}} </strong>
-						<strong class="animated flash" ng-if="faceResult.job != null && activatedLanguage === 'en'">{{::faceResult.job.en.title}}</strong>
-						<strong class="animated flash" ng-if="faceResult.job != null && activatedLanguage === 'vi'">{{::faceResult.job.vi.title}}</strong>
+						<strong class="animated fadeIn" ng-if="faceResult.job != null && activatedLanguage === 'en'">{{::faceResult.job.en.title}}</strong>
+						<strong class="animated fadeIn" ng-if="faceResult.job != null && activatedLanguage === 'vi'">{{::faceResult.job.vi.title}}</strong>
 					</div>
 				</div>
 				<div class="face-detection-ring" style="top:10px; left: 60px" hidden></div>
 			</div>
 			<div class="result-content pull-left">
 				<span class="close-icon" ng-click="backHome()"></span>
-				<p>{{'Hello' | translate}} <span ng-if="faceResult.name" class="black bold animated bounceIn">{{::faceResult.name}}</span></p>
-				<div ng-show="faceResult.job != null" class="animated fadeInUp">
-					<p>{{'YouLookLike' | translate}} 
+				<p>{{'Hello' | translate}}
+					<span ng-if="faceResult.name" class="black bold animated fadeIn">{{::faceResult.name}}</span>
+				</p>
+				<div ng-show="faceResult.job != null" class="animated fadeIn">
+					<p>{{'YouLookLike' | translate}}
 						<strong ng-if="activatedLanguage === 'en'">{{::faceResult.job.en.title}}</strong>
 						<strong ng-if="activatedLanguage === 'vi'">{{::faceResult.job.vi.title}}</strong>
-					!</p>
+						!
+					</p>
 					<p ng-if="activatedLanguage === 'en'">{{::faceResult.job.en.desc}}</p>
 					<p ng-if="activatedLanguage === 'vi'">{{::faceResult.job.vi.desc}}</p>
 					<p>The
-						<a href="">#FaceWorks</a>
+						<a href="/#">#FaceWorks</a>
+					</p>
+					<p>
+						<a href="" ng-click="onShare()" class="share-result-fb">
+							<span class="glyphicon glyphicon-share"></span>
+							<em>{{'ShareResult' | translate}}</em>
+						</a>
 					</p>
 				</div>
 			</div>
@@ -37,8 +46,23 @@
 	<!-- Email Me Jobs -->
 	<div class="email-me-jobs">
 		<p class="lead text-center" data-translate="Sorry"></p>
+		<div class="message-wrapper text-center" hidden>
+			<div class="alert alert-danger" role="alert">
+				<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+				<span class="sr-only">Error:</span>
+				Sorry, we could not create notification for you, please try again later.
+			</div>
+		</div>
+		<div class="message-wrapper text-center" hidden>
+			<div class="alert alert-success" role="alert">
+				<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+				<span class="sr-only">Error:</span>
+				Congratulations! Soon you will get the best job matches in your inbox.
+			</div>
+		</div>
 		<div class="text-center btn-email-me-jobs">
-			<a class="btn-translucent" ng-click="onRegister()" ng-disabled = "isRegistering">
+			<!-- <a class="btn-translucent" ng-click="onRegister()" ng-disabled="isRegistering"> -->
+			<a class="btn-translucent" ng-href="{{'EmailMeUrl' | translate}}" target="_blank">
 				<img class="email-icon" src="assets/img/icon_email.png" alt=""/>
 				<span ng-hide='isRegistering'>{{'EmailMe' | translate}}</span>
 				<span ng-show='isRegistering'>{{'Processing' | translate}}</span>

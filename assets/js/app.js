@@ -17,7 +17,7 @@ faceCareer.config(['$routeProvider',
             templateUrl: 'partials/result.html',
             controller: 'resultCtrl'
         }).when('/resultfb', {
-            templateUrl: 'partials/result_fb.html',
+            templateUrl: 'partials/result_fb.html'
         }).otherwise({redirectTo: '/'});
     }]);
 
@@ -31,7 +31,7 @@ var translationsEN = {
     TermsOfUseUrl: 'http://www.vietnamworks.com/terms-of-use',
     UseFBProfile: 'Use Your Facebook Profile',
     PS: 'P.S. We do not keep any photo!',
-    Hello: 'Hello,',
+    Hello: 'Hello',
     MyNameIs: 'My name is',
     Sorry: 'Sorry if we did not get your job right! <br/> You can tell us about your job, and we will keep you updated with best jobs.',
     EmailMe: 'Email Me Jobs',
@@ -41,7 +41,8 @@ var translationsEN = {
     Status_Loading: 'Loading ...',
     Status_Scanning: 'Scanning ...',
     Status_Checking: 'Checking your job ...',
-    Processing: 'Processing ...'
+    Processing: 'Processing ...',
+    ShareResult: 'Share Result'
 };
 
 var translationsVI = {
@@ -52,17 +53,18 @@ var translationsVI = {
     TermsOfUseUrl: 'http://www.vietnamworks.com/thoa-thuan-su-dung',
     UseFBProfile: 'Sử Dụng Hồ Sơ Facebook',
     PS: 'P.S. Chúng tôi không lưu giữ bất cứ hình ảnh nào!',
-    Hello: 'Xin chào,',
+    Hello: 'Xin chào',
     MyNameIs: 'Tên tôi là',
     Sorry: 'Rất tiếc nếu chúng tôi đoán không đúng công việc của bạn! <br/> Hãy cho chúng tôi biết bạn làm gì, chúng tôi sẽ giúp bạn cập nhật những công việc tốt nhất.',
     EmailMe: 'Gửi Việc Cho Tôi',
     EmailMeUrl: 'http://www.vietnamworks.com/tao-thong-bao-viec-lam',
     YouLookLike: 'Bạn trông giống như',
 
-    Status_Loading: 'Loading ...',
-    Status_Scanning: 'Scanning ...',
-    Status_Checking: 'Checking your job ...',
-    Processing: 'Đang gửi ...'
+    Status_Loading: 'Đang tải ...',
+    Status_Scanning: 'Đang quét ...',
+    Status_Checking: 'Đang dự đoán ...',
+    Processing: 'Đang gửi ...',
+    ShareResult: 'Chia sẻ kết quả'
 };
 
 faceCareer.config(['$translateProvider', function ($transProvider) {

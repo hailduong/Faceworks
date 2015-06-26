@@ -75,9 +75,9 @@ h1.title{ font-size:60px; font-weight:300; text-align:left; margin:0; margin-lef
 	}
 	.face img{ .opacity(0.5); width:200px; height:200px; -webkit-user-drag:none; }
 }
-.home-page .facebook-icon{ width:31px; height:31px; }
+.use-facebook-photo .facebook-icon{ width:31px; height:31px; }
 .error-wrapper{
-	.alert{ background:#e7e1eb; font-weight:400; color:#a04747; display:inline-block;
+	.alert{ background:#e7e1eb; font-weight:400; color:#a04747; display:inline-block; padding:7px 15px 5px;
 		span.glyphicon{ color:#a04747 }
 	}
 }
@@ -87,12 +87,12 @@ h1.title{ font-size:60px; font-weight:300; text-align:left; margin:0; margin-lef
 	.close-icon{ width:30px; height:30px; display:block; background:url(../assets/img/icon_close.png) center center no-repeat; background-size:50%; position:absolute; top:5px; right:5px; cursor:pointer; .transition(opacity 0.3s);
 		&:hover{ .opacity(0.5) }
 	}
-	.chosen-face{ padding:0 70px; }
+	.chosen-face{ padding:0 70px; margin-bottom:50px; }
 	.chosen-face-wrapper{ background:#fff; border-radius:0 5px 5px 0; position:relative;
 		p{ color:#333333 }
 		.result-content{ width:770px; padding:30px 30px 10px; font-size:16px; line-height:24px; font-weight:300; }
 	}
-	.face{ cursor:pointer; .transition(~'background 0.3s, box-shadow 0.3s, padding-left 0.3s, padding-right 0.3s'); background:transparent }
+	.face{ .transition(~'background 0.3s, box-shadow 0.3s, padding-left 0.3s, padding-right 0.3s'); background:transparent }
 	.face.active{
 		background:@fc-white; padding:10px; .box-shadow(0 0 10px rgba(0, 0, 0, 0.6));
 		img{ .opacity(1) }
@@ -104,8 +104,13 @@ h1.title{ font-size:60px; font-weight:300; text-align:left; margin:0; margin-lef
 
 	//Email Me Job
 	.email-me-jobs{
-		p.lead{ margin:50px 0 20px; }
+		p.lead{ margin:0 0 20px; }
 		.email-icon{ width:25px; height:20px; }
+	}
+
+	.share-result-fb{
+		position:absolute; right:15px; bottom:7px; font-size:14px;
+		.glyphicon{ color:@fc-blue }
 	}
 	// Medium & large screen | 992px <= Screen
 	@media (min-width:@screen-md-min) and (max-width:@screen-md-max){
@@ -137,13 +142,26 @@ h1.title{ font-size:60px; font-weight:300; text-align:left; margin:0; margin-lef
 
 }
 // Get photos from Facebook
-.btn-translucent{ display:inline-block; padding:5px 10px; background:#177ab1; border:1px solid #44aed3; font-size:18px; color:@fc-white; font-weight:300; text-decoration:none; cursor: pointer; .transition(all 0.3s);
+.btn-translucent{ display:inline-block; padding:5px 10px; background:#177ab1; border:1px solid #44aed3; font-size:18px; color:@fc-white; font-weight:300; text-decoration:none; cursor:pointer; .transition(all 0.3s);
 	*{ display:inline-block; vertical-align:middle; }
 	&:hover, &:focus{ background:#00669b; text-decoration:none; }
 	&:active{ background:#0081b2 }
 }
 .use-facebook-photo{ margin-bottom:20px; }
 p.ps{ margin-bottom:90px; }
+// Animation
+@animation-duration:0.3s;
+.animated{ -webkit-animation-duration:@animation-duration; -moz-animation-duration:@animation-duration; -o-animation-duration:@animation-duration; animation-duration:@animation-duration; }
+// Messages
+.message-wrapper{
+	.alert{ display:inline-block; font-weight:400; padding:7px 15px 5px }
+	.alert-danger{ background:#e7e1eb; color:#a04747;
+		span.glyphicon{ color:#a04747 }
+	}
+	.alert-success{ color:#20832a; background:#e7ffe5;
+		span.glyphicon{ color:#20832a }
+	}
+}
 //Extreme small screen | Screen < 768px
 @media (max-width:@screen-xs-max){
 	p.ps{ margin-bottom:30px; }
@@ -154,3 +172,4 @@ p.ps{ margin-bottom:90px; }
 	span{ color:@fc-blue-dark }
 }
 .copyright{ margin-bottom:40px; }
+

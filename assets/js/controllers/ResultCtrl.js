@@ -17,6 +17,8 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 					$scope.last_name = response.last_name;
 					$scope.faceResult.name = response.first_name + " " + response.last_name;
 					$scope.user_email = response.email;
+					$scope.gender = response.gender;
+					$scope.onRegister();
 				}
 			}
 		);
@@ -62,11 +64,18 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 				img2.crossOrigin = "Anonymous";
 				img2.src = canvas.toDataURL();
 				img2.setAttribute("id", "avatar_img");
+				
 
 				$scope.isLoadedAvatar = true;
 				$scope.faceResult.status = 'Status_Scanning';
 				$scope.$apply(function() {
 					$("#avatar").prepend(img2);
+					$("#avatar_img").css({
+						"opacity":"0",
+						"position":"absolute",
+						"z-index":"-999999"
+					});
+					$("#avatar").prepend(img);
 				});
 
 				setTimeout(function(){
@@ -81,7 +90,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 						$scope.$apply();
 
 						event.data.forEach(function(rect) {
-							$("#marker").addClass("face-detection-ring animated bounceIn");
+							$("#marker").addClass("face-detection-ring animated fadeIn");
 							$("#marker").css({ 
 								top: (rect.y + 10) + "px",
 								left: (rect.x + 10) + "px",
@@ -118,9 +127,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 		$location.url('/');
 	}
 
-	$scope.isRegistering = false;
 	$scope.onRegister = function() {
-		$scope.isRegistering = true;
 		$.ajax({
 			url: "/vnw_register",
 			type: 'POST',
@@ -132,18 +139,27 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 				"last_name": $scope.last_name
 			}),
 			success: function (data) { 
-				if (data.error && data.error > 0) {
-					alert(data.message || "Failed to call the REST api on VietnamWorks");
-				} else {
-					alert(data.message || "success");
-				}
-				$scope.isRegistering = false;
+				// if (data.error && data.error > 0) {
+				// 	alert(data.message || "Failed to call the REST api on VietnamWorks");
+				// } else {
+				// 	alert(data.message || "success");
+				// }
 				$scope.$apply();
 			},
 			error: function () { 
-				$scope.isRegistering = false;
 				$scope.$apply();
 			},
 		});
+	}
+
+	$scope.onShare = function() {
+		FB.ui({
+			method: 'feed',
+			name: ($scope.activatedLanguage == 'en'?translationsEN.YouLookLike:translationsVI.YouLookLike) + " <b>" + $scope.faceResult.job[$scope.activatedLanguage].title + "</b>",
+			description: $scope.faceResult.job[$scope.activatedLanguage].desc,
+			caption: "Faceworks - " + ($scope.activatedLanguage == 'en'?translationsEN.WhichJobDoILook:translationsVI.WhichJobDoILook),
+			link: window.location.href ,
+			picture: $scope.gender == "male"?$scope.faceResult.job.picture.male:scope.faceResult.job.picture.female
+		}, function(response){});
 	}
 });
