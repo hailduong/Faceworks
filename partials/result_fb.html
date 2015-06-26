@@ -27,17 +27,17 @@
 					<p ng-if="activatedLanguage === 'en'">{{::faceResult.job.en.desc}}</p>
 					<p ng-if="activatedLanguage === 'vi'">{{::faceResult.job.vi.desc}}</p>
 					<p>The
-						<a href="/#">#FaceWorks</a>
+						<a href="#/">#FaceWorks</a>
 					</p>
 					<p>
 						<a href="" ng-click="onShare()" class="share-result-fb">
-							<span class="glyphicon glyphicon-share"></span>
-							<em>{{'ShareResult' | translate}}</em>
+							<img class="facebook-icon" src="assets/img/icon_facebook.png" height="16" width="16" >
+							<span>{{'ShareResult' | translate}}</span>
 						</a>
 					</p>
 				</div>
 			</div>
-			<div style="position:relative; width:0px; height:0px">
+			<div style="position:relative; width:0; height:0">
 				<div id="marker"></div>
 			</div>
 		</div>

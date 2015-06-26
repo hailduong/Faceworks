@@ -13,7 +13,7 @@
 @import "../bower_components/bootstrap/less/mixins";
 
 // General
-body{ background:@fc-blue; overflow-x:hidden; }
+body, html{ background:@fc-blue; overflow-x:hidden; }
 p, div, span, h1, h2, h3, h1 small, a{ color:@fc-white; font-family:Roboto, Arial, sans-serif; font-weight:300 }
 a{ color:@fc-blue-dark; .transition(color 0.3s); text-decoration:none;
 	&:hover{ color:@fc-orange; text-decoration:none; }
@@ -47,7 +47,10 @@ h1.title{ font-size:60px; font-weight:300; text-align:left; margin:0; margin-lef
 	h1.title .logo-faceworks{ width:188px; height:auto; }
 }
 // Facebook Share
-.facebook-share{ margin-top:50px; height:20px; }
+.facebook-share{ margin-top:50px; height:20px;
+	&.hide-on-this-page{ margin-top:10px;}
+	&.hide-on-this-page .fb-share-button{ display:none }
+}
 //Extreme small screen | Screen < 768px
 @media (max-width:@screen-xs-max){
 	.facebook-share{ margin-top:25px; }
@@ -65,15 +68,17 @@ h1.title{ font-size:60px; font-weight:300; text-align:left; margin:0; margin-lef
 	margin-top:50px; margin-bottom:50px;
 	.career-result{ .opacity(0) }
 	.carousel-strip{ height:262px; }
-	.face{ cursor:pointer; .transition(~'background 0.3s, box-shadow 0.3s, padding-left 0.3s, padding-right 0.3s'); background:transparent }
+	.face{ cursor:pointer; .transition(~'background 0.3s, box-shadow 0.3s, padding-left 0.3s, padding-right 0.3s'); background:transparent; width:200px;
+		img{ .opacity(0.5); width:200px; height:200px; -webkit-user-drag:none; }
+	}
+
 	.face.active{
-		background:@fc-white; padding:10px; .box-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+		background:@fc-white; padding:10px; .box-shadow(0 0 10px rgba(0, 0, 0, 0.6)); width:220px;
 		img{ .opacity(1) }
 		.career-result{ .opacity(1); padding:5px; text-transform:uppercase; font-weight:bold; border:1px solid @fc-blue; margin-top:10px; border-radius:5px; width:200px;
 			*{ color:@fc-blue; }
 		}
 	}
-	.face img{ .opacity(0.5); width:200px; height:200px; -webkit-user-drag:none; }
 }
 .use-facebook-photo .facebook-icon{ width:31px; height:31px; }
 .error-wrapper{
@@ -109,8 +114,8 @@ h1.title{ font-size:60px; font-weight:300; text-align:left; margin:0; margin-lef
 	}
 
 	.share-result-fb{
-		position:absolute; right:15px; bottom:7px; font-size:14px;
-		.glyphicon{ color:@fc-blue }
+		position:absolute; right:15px; bottom:15px; font-size:14px; display:inline-block; padding:3px 10px 1px 7px; background:#185FAE; color:@fc-white; .border-radius(2px);
+		.glyphicon{ color:@fc-white }
 	}
 	// Medium & large screen | 992px <= Screen
 	@media (min-width:@screen-md-min) and (max-width:@screen-md-max){

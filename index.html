@@ -4,13 +4,17 @@
 		<meta charset="UTF-8">
 		<title>FaceWorks</title>
 		<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-
+		<link rel="shortcut icon" href="/assets/img/fw_favicon.png"/>
+		<meta property="og:image" content="/assets/img/fw_thumbnail.png"/>
+		<meta property="og:title" content="FaceWorks - Which Job Do I Look Like?"/>
+		<meta property="og:url" content="http://face.vietnamworks.com"/>
+		<meta property="og:title_name" content="face.vietnamworks.com"/>
+		<meta property="og:description" content="Submit your photo from Facebook Profile and see which job do you look like!."/>
 		<!-- build:css(.) styles/vendor.css -->
 		<!-- bower:css -->
-		<link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+		<link rel="stylesheet" href="bower_components/animate.css/animate.css"/>
 		<!-- endbower -->
 		<!-- endbuild -->
-
 		<!-- build:css(.) styles/app.css -->
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
 		<link rel="stylesheet" href="assets/facecareer.css"/>
@@ -42,9 +46,9 @@
 					</div>
 				</div>
 				<!-- Facebook Share -->
-				<div class="facebook-share">
+				<div class="facebook-share" ng-class="hideOnThisPage">
 					<div id="fb-root"></div>
-					<div class="fb-share-button" data-href="http://vietnamworks.com" data-layout="button_count"></div>
+					<div class="fb-share-button" data-href="http://face.vietnamworks.com/#/" data-layout="button_count"></div>
 				</div>
 				<!--/ Facebook Share -->
 			</div>
@@ -69,7 +73,6 @@
 			</div>
 		</div>
 		<!--/ Footer -->
-
 		<!-- build:js(.) scripts/vendor.js -->
 		<!-- bower:js -->
 		<script src="bower_components/jquery/dist/jquery.js"></script>
@@ -85,15 +88,12 @@
 		<script src="bower_components/angular-route/angular-route.js"></script>
 		<!-- endbower -->
 		<!-- endbuild -->
-		
 		<!-- build:js(.) scripts/face.js -->
 		<script src='bower_components/tracking.js/build/data/face-min.js'></script>
 		<!-- endbuild -->
-
 		<!-- build:js(.) scripts/app.js -->
 		<script src='assets/js/app.js'></script>
 		<script src='assets/js/controllers.js'></script>
-
 		<script src="assets/js/controllers/HomeCtrl.js"></script>
 		<script src="assets/js/controllers/ResultCtrl.js"></script>
 		<script src="assets/js/fb.js"></script>

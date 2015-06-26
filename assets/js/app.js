@@ -70,14 +70,21 @@ var translationsVI = {
 faceCareer.config(['$translateProvider', function ($transProvider) {
     $transProvider.translations('en', translationsEN);
     $transProvider.translations('vi', translationsVI);
-    $transProvider.preferredLanguage('en');
-    $transProvider.fallbackLanguage('en');
+    $transProvider.preferredLanguage('vi');
+    $transProvider.fallbackLanguage('vi');
     $transProvider.useCookieStorage();
 }]);
 
 
-faceCareer.controller('MainControl', ['$translate', '$scope', function ($translate, $scope) {
+faceCareer.controller('MainControl', function ($translate, $scope, $location) {
 
+    $scope.$on('$locationChangeStart', function (event) {
+        if ($location.path() === "/resultfb") {
+            $scope.hideOnThisPage = "hide-on-this-page";
+        } else {
+            $scope.hideOnThisPage = "animated fadeIn";
+        }
+    });
 
     $scope.activatedLanguage = function () {
         if ($translate.use() === "en") {
@@ -94,5 +101,5 @@ faceCareer.controller('MainControl', ['$translate', '$scope', function ($transla
         } else {
             $scope.activatedLanguage = 'vi';
         }
-    }
-}]);
+    };
+});
