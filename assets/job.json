@@ -9,8 +9,8 @@
             "desc": "Bạn nên suy nghĩ về cuộc sống của một chuyên gia về sô cô la. Không chỉ là một nhà sản xuất, bạn còn là một đầu bếp được đào tạo bài bản và chuyên sâu về tất cả những gì liên qua đến sô cô la, từ việc sáng tạo cho đến chế biến công thức mới."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -23,8 +23,8 @@
             "desc": "Bạn kiếm sống bằng cách nhận chăm sóc cún cưng của người khác như là của riêng mình. Bạn tự chủ, tự do để thiết lập lịch trình của mình và chọn bất cứ khách hàng nào mà bạn muốn."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -37,8 +37,8 @@
             "desc": "Bạn kiếm tiền bằng cách dạy người khác làm sao để không còn vụng về trên sàn nhảy, giúp họ tự tin và điêu luyện hơn."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -51,8 +51,8 @@
             "desc": "Người ta luôn mong ước rằng mỗi ngày đều được tận hưởng như trong spa. Đó là chuyện nhỏ đối với bạn (về mặt kĩ thuật), bởi vì bạn chính là một người quản lý spa."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -65,8 +65,8 @@
             "desc": "Bạn luôn mong muốn sống trong thế giới tuổi thơ? Trong khi điều này có thể mang đến vài điều rắc rối trong cuộc sống thường nhật của bạn, thế nhưng trí tưởng tượng trẻ con và phong phú sẽ giúp bạn thành công với công việc của một chuyên gia sáng tạo đồ chơi chuyên nghiệp."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -79,8 +79,8 @@
             "desc": "Đối với bạn, đại dương sâu thăm thẳm kia không thành vấn đề, bạn bị cuốn hút bởi vẻ đẹp, sự huyền bí của nó, và muốn giúp những người khác tìm hiểu các trải nghiệm mê hoặc nơi đáy biển"
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -93,8 +93,8 @@
             "desc": "Nhà sinh thái học là những siêu anh hùng của thiên nhiên, bạn làm việc không mệt mỏi để tìm và nghiên cứu mối quan hệ giữa môi trường và tất cả những gì ảnh hưởng đến nó, để giúp giữ gìn nguồn tài nguyên của vũ trụ"
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -107,8 +107,8 @@
             "desc": "Hoa là tạo vật luôn hiện diện trong thời khắc hạnh phúc nhất và buồn nhất trong đời sống con người; một người cung cấp hoa như bạn có thể nói là đóng một vai trò lớn trong những dịp kỉ niệm của tất cả mọi người."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -121,8 +121,8 @@
             "desc": "Yêu cầu người khác cho tiền không bao giờ là dễ dàng, nhưng một số người có một sở trường kỳ lạ là biết khi nào và làm cách nào để quyên tiền một cách khéo léo - và nhận được nó. Bạn là người đặc biệt đó, cùng các kỹ năng tổ chức, bạn luôn có được một buổi gây quỹ thành công."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -135,8 +135,8 @@
             "desc": "Tạo kiểu tóc cho một ai đó có thể thay đổi toàn bộ diện mạo của họ, cũng như làm mới niềm tin và tạo nên cảm giác của một sự khởi đầu mới. Bạn là một cá nhân sáng tạo với sự quan tâm đến từng chi tiết, người tuyệt vời như bạn rất phù hợp cho công việc này."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -149,8 +149,8 @@
             "desc": "Đây là một công việc thú vị cho một người như bạn: sáng tạo và đam mê thiên nhiên, và bạn không hề ngại bẩn tay."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -163,8 +163,8 @@
             "desc": "Bạn thích thú khi được làm việc một chương trình truyền hình dự báo thời tiết, chỉ cần bạn vẫy cánh tay và nói về một cơn bão là tất cả mọi người đều phải ở nhà thay vì ra sân chơi bóng."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -177,8 +177,8 @@
             "desc": "Bạn là người giữ trẻ tốt nhất trong khu phố, bạn cảm thấy tự tin và vui vẻ khi xung quanh mình toàn những thiên thần nhỏ."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -191,8 +191,8 @@
             "desc": "Có phải cuộc sống của bạn luôn là một bữa tiệc lớn? Bạn đang kinh doanh trên những niềm vui, sự hào hứng và những giấc mơ."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -205,8 +205,8 @@
             "desc": "Bạn là người mà tất cả mọi người tìm đến bạn để được tư vấn về những gì nên mua - từ quần áo, phụ kiện, đồ gia dụng... Bạn được trả tiền để hướng dẫn mọi người ra các quyết định mua sắm của họ."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -219,8 +219,8 @@
             "desc": "Bạn không bao giờ nản lòng với việc đào sâu và phơi bày bí mật của người khác - bởi vì, nguồn thu nhập của bạn từ đó mà ra."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -233,8 +233,8 @@
             "desc": "Tình yêu của bạn dành cho động vật bao la hơn tất cả mọi người- bạn muốn giúp đỡ tất cả các loài động vật sống khỏe mạnh và hạnh phúc hơn."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -247,8 +247,8 @@
             "desc": "Bạn biết các kỹ năng máy tính để xâm nhập và gây thiệt hại cho một tổ chức nếu bạn muốn, nhưng về mặt đạo đức, bạn là người tốt trong thế giới này."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -261,8 +261,8 @@
             "desc": "Bạn được trả tiền để bay vòng quanh thế giới hằng ngày và không bao giờ ở yên một chỗ."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     },
     {
@@ -275,8 +275,8 @@
             "desc": "Bạn  làm việc với những con vật ở sở thú. Nhà động vật học như bạn luôn muốn mang lại dịch vụ chăm sóc động vật, và chia sẻ với công chúng với mục đích giáo dục và giải trí."
         },
         "picture": {
-            "male": "./assets/img/fw_thumbnail.png",
-            "female": "./assets/img/fw_thumbnail.png"
+            "male": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png",
+            "female": "http://face.vietnamworks.com/assets/img/fw_thumbnail.png"
         }
     }
 ]
