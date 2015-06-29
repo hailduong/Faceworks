@@ -23,6 +23,7 @@ module.exports = function(grunt) {
       	wiredep: {
 			app: {
 				src: ['index.html'],
+				exclude: ['bower_components/threejs/build/three.js']
 			}
 		},
 		copy: {
