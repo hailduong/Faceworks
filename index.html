@@ -21,12 +21,12 @@
 		<link rel="stylesheet" href="assets/custom.css"/>
 		<!-- endbuild -->
 	</head>
-	<body ng-controller="MainControl" ng-cloak>
+	<body ng-controller="MainControl">
 		<!-- Header -->
-		<div class="languages">
-			<a class="english" ng-cloak ng-class="{'active' : activatedLanguage === 'en'}" ng-click="changeLanguage('en')">English</a>
+		<div class="languages" ng-cloak>
+			<a class="english"  ng-class="{'active' : activatedLanguage === 'en'}" ng-click="changeLanguage('en')">English</a>
 			|
-			<a class="vietnamese" ng-cloak ng-class="{'active': activatedLanguage === 'vi'}" ng-click="changeLanguage('vi')">Tiếng Việt</a>
+			<a class="vietnamese" ng-class="{'active': activatedLanguage === 'vi'}" ng-click="changeLanguage('vi')">Tiếng Việt</a>
 		</div>
 		<div class="container">
 			<div class="text-center center-block">
@@ -61,10 +61,10 @@
 		<!--/ Body -->
 		<!-- Footer -->
 		<div class="container">
-			<div class="terms text-center">
-				<a ng-cloak ng-href="{{'PrivacyUrl' | translate}}" target="_blank">{{'Privacy' | translate}}</a>
+			<div class="terms text-center" ng-cloak>
+				<a ng-href="{{'PrivacyUrl' | translate}}" target="_blank">{{'Privacy' | translate}}</a>
 				<span>|</span>
-				<a ng-cloak ng-href="{{'TermsOfUseUrl' | translate}}" target="_blank">{{'TermsOfUse' | translate}}</a>
+				<a ng-href="{{'TermsOfUseUrl' | translate}}" target="_blank">{{'TermsOfUse' | translate}}</a>
 			</div>
 			<div class="copyright text-center">
 				<a href="http://www.vietnamworks.com" target="_blank">
@@ -83,7 +83,6 @@
 		<script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
 		<script src="bower_components/angular-translate-storage-local/angular-translate-storage-local.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-		<script src="bower_components/threejs/build/three.js"></script>
 		<script src="bower_components/tracking.js/build/tracking.js"></script>
 		<script src="bower_components/angular-route/angular-route.js"></script>
 		<!-- endbower -->

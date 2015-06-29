@@ -159,7 +159,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 			description: $scope.faceResult.job[$scope.activatedLanguage].desc,
 			caption: "Faceworks - " + ($scope.activatedLanguage == 'en'?translationsEN.WhichJobDoILook:translationsVI.WhichJobDoILook),
 			link: window.location.href ,
-			picture: $scope.gender == "male"?$scope.faceResult.job.picture.male:scope.faceResult.job.picture.female
+			picture: $scope.gender == "male"?$scope.faceResult.job.picture.male:$scope.faceResult.job.picture.female
 		}, function(response){});
 	}
 });
