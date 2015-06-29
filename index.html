@@ -21,12 +21,12 @@
 		<link rel="stylesheet" href="assets/custom.css"/>
 		<!-- endbuild -->
 	</head>
-	<body ng-cloak ng-controller="MainControl" ng-cloak>
+	<body ng-controller="MainControl" ng-cloak>
 		<!-- Header -->
 		<div class="languages">
-			<a class="english" ng-class="{'active' : activatedLanguage === 'en'}" ng-click="changeLanguage('en')">English</a>
+			<a class="english" ng-cloak ng-class="{'active' : activatedLanguage === 'en'}" ng-click="changeLanguage('en')">English</a>
 			|
-			<a class="vietnamese" ng-class="{'active': activatedLanguage === 'vi'}" ng-click="changeLanguage('vi')">Tiếng Việt</a>
+			<a class="vietnamese" ng-cloak ng-class="{'active': activatedLanguage === 'vi'}" ng-click="changeLanguage('vi')">Tiếng Việt</a>
 		</div>
 		<div class="container">
 			<div class="text-center center-block">
@@ -39,7 +39,7 @@
 							<a href="#/">
 								<img class="logo-faceworks" src="assets/img/logo_faceworks.png" alt="faceworks"/>
 							</a>
-							<small>{{'WhichJobDoILook' | translate}}
+							<small ng-cloak>{{'WhichJobDoILook' | translate}}
 								<a href="#/">#FaceWorks</a>
 							</small>
 						</h1>
@@ -48,7 +48,7 @@
 				<!-- Facebook Share -->
 				<div class="facebook-share" ng-class="hideOnThisPage">
 					<div id="fb-root"></div>
-					<div class="fb-share-button" data-href="http://face.vietnamworks.com" data-layout="button_count"></div>
+					<div class="fb-share-button" data-href="http://face.vietnamworks.com/index.html" data-layout="button_count"></div>
 				</div>
 				<!--/ Facebook Share -->
 			</div>
@@ -62,9 +62,9 @@
 		<!-- Footer -->
 		<div class="container">
 			<div class="terms text-center">
-				<a ng-href="{{'PrivacyUrl' | translate}}" target="_blank">{{'Privacy' | translate}}</a>
+				<a ng-cloak ng-href="{{'PrivacyUrl' | translate}}" target="_blank">{{'Privacy' | translate}}</a>
 				<span>|</span>
-				<a ng-href="{{'TermsOfUseUrl' | translate}}" target="_blank">{{'TermsOfUse' | translate}}</a>
+				<a ng-cloak ng-href="{{'TermsOfUseUrl' | translate}}" target="_blank">{{'TermsOfUse' | translate}}</a>
 			</div>
 			<div class="copyright text-center">
 				<a href="http://www.vietnamworks.com" target="_blank">
