@@ -4,10 +4,10 @@ var bodyParser = require('body-parser')
 var curl = require("curlrequest");
 
 
-app.use( bodyParser.json() ); 
+app.use( bodyParser.json() );
 app.use(bodyParser.urlencoded({
 	extended: true
-})); 
+}));
 
 app.get('/', function (req, res) {
   res.redirect("index.html");
@@ -17,22 +17,22 @@ app.post('/vnw_register', function (req, res) {
 	var email = req.body.email;
 	var first_name = req.body.first_name;
 	var last_name = req.body.last_name;
-	
+
 	var opt1 = {
-		url: 'https://api-staging.vietnamworks.com/users/account-status/?email=' + email, 
+		url: 'https://api.vietnamworks.com/users/account-status/?email=' + email,
 		headers: {
 			'Content-Type': 'application/json',
 			'Accept': "application/json",
-			'content-md5': '2ed19d9c84fa9280fe6fa1a9e58de807a9d076646de8327c53fc8ed64ca4e268'
+			'content-md5': ' 9b91abb58450c72f8f2a0b80555db82b450c68b75d8e1206754a53990f75e613'
 		}
 	};
 
 	var opt2 = {
-		url: 'https://api-staging.vietnamworks.com/users/registerWithoutConfirm', 
+		url: 'https://api.vietnamworks.com/users/registerWithoutConfirm',
 		headers: {
 			'Content-Type': 'application/json',
 			'Accept': "application/json",
-			'content-md5': '2ed19d9c84fa9280fe6fa1a9e58de807a9d076646de8327c53fc8ed64ca4e268'
+			'content-md5': ' 9b91abb58450c72f8f2a0b80555db82b450c68b75d8e1206754a53990f75e613'
 		},
 		data: JSON.stringify({
 			"email": email,
@@ -79,7 +79,7 @@ app.post('/vnw_register', function (req, res) {
 
 app.use(express.static('./'));
 
-var server = app.listen(3000, function () {
+var server = app.listen(80, function () {
 
   var host = server.address().address;
   var port = server.address().port;

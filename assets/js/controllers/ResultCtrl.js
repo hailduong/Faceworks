@@ -9,10 +9,10 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 
 	if (typeof(FB) != "undefined") {
 		FB.api(
-			"/me", 
+			"/me",
 			function (response) {
 				if (response && !response.error) {
-					console.log(response);
+					// console.log(response);
 					$scope.first_name = response.first_name;
 					$scope.last_name = response.last_name;
 					$scope.faceResult.name = response.first_name + " " + response.last_name;
@@ -45,7 +45,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 	var loadFacebookAvatar = function(url) {
 		var size = 200;
 
-		var img = new Image, 
+		var img = new Image,
 			canvas = document.createElement("canvas"),
 			ctx = canvas.getContext("2d");
 
@@ -64,7 +64,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 				img2.crossOrigin = "Anonymous";
 				img2.src = canvas.toDataURL();
 				img2.setAttribute("id", "avatar_img");
-				
+
 
 				$scope.isLoadedAvatar = true;
 				$scope.faceResult.status = 'Status_Scanning';
@@ -82,16 +82,16 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 					var tracker = new tracking.ObjectTracker(['face']);
 					tracker.setStepSize(1.7);
 					tracking.track('#avatar_img', tracker);
-					
+
 					tracker.on('track', function(event) {
-						console.log(event);
+						// console.log(event);
 
 						$scope.faceResult.status = 'Status_Checking';
 						$scope.$apply();
 
 						event.data.forEach(function(rect) {
 							$("#marker").addClass("face-detection-ring animated fadeIn");
-							$("#marker").css({ 
+							$("#marker").css({
 								top: (rect.y + 10) + "px",
 								left: (rect.x + 10) + "px",
 								width: rect.width + "px",
@@ -138,7 +138,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 				"first_name": $scope.first_name,
 				"last_name": $scope.last_name
 			}),
-			success: function (data) { 
+			success: function (data) {
 				// if (data.error && data.error > 0) {
 				// 	alert(data.message || "Failed to call the REST api on VietnamWorks");
 				// } else {
@@ -146,7 +146,7 @@ angular.module('faceCareerControllers').controller("ResultCtrl", function($rootS
 				// }
 				$scope.$apply();
 			},
-			error: function () { 
+			error: function () {
 				$scope.$apply();
 			},
 		});
