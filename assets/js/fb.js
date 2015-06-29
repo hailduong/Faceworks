@@ -7,13 +7,14 @@ window.fbAsyncInit = function () {
     });
 
     FB.getLoginStatus(function (response) {
-        console.log('statusChangeCallback');
-        console.log(response);
-
         var scope = angular.element(document.getElementById("home_page")).scope();
-        scope.$apply(function () {
-            scope.onFacebookStatusCallback(response.status);
-        });
+        if (typeof scope !== "undefined" && scope !== null) {
+            scope.$apply(function () {
+                if (typeof scope.onFacebookStatusCallback === "function") {
+                    scope.onFacebookStatusCallback(response.status);
+                }
+            });
+        }
     });
 
 };

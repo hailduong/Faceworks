@@ -115,11 +115,11 @@ faceCareerControllers.controller('resultCtrl', function ($scope, $rootScope, $ht
                 $location.url("/resultfb");
                 $scope.$apply();
             } else if (response.status === 'not_authorized') {
-                console.log("fail to login with facebbok", "not_authorized");
+                // console.log("fail to login with facebbok", "not_authorized");
                 $scope.isLoading = false;
                 $scope.$apply();
             } else {
-                console.log("fail to login with facebbok");
+                // console.log("fail to login with facebbok");
                 $scope.isLoading = false;
                 $scope.$apply();
             }
